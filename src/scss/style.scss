@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import "public/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+
+.header {
+	display: flex;
+	position: relative;
+	min-height: 615px;
+	padding-right: 60px;
+	padding-left: 215px;
+	background: url(/assets/images/mv-bg01.jpg) no-repeat center/cover;
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 15px;
+		background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.0));
+	}
+
+	&__motto {
+		color: #fff;
+		font-size: 48px;
+		line-height: 72px;
+		align-self: center;
+	}
+}
+
+.sec {
+	padding: 80px 60px;
+
+	&--01 {
+		text-align: center;
+
+		.heading {
+			letter-spacing: 1px;
+		}
+
+		.lead {
+			font-size: 20px;
+			line-height: 34px;
+			letter-spacing: 0.2px;
+		}
+	}
+
+	&--02 {
+		padding: 0;
+	}
+}
+
+.feature {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	min-height: 400px;
+	align-items: center;
+	justify-content: space-between;
+
+	&::before {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: -18px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		content: "";
+		filter: blur(9px) brightness(50%);
+	}
+
+	&--01 {
+
+		&::before {
+			background-image: url(/assets/images/sec02-img01.jpg);
+		}
+	}
+
+	&--02 {
+
+		&::before {
+			background-image: url(/assets/images/sec02-img02.jpg);
+		}
+	}
+
+	&--03 {
+		&::before {
+			background-image: url(/assets/images/sec02-img03.jpg);
+		}
+	}
+
+	&--04 {
+		&::before {
+			background-image: url(/assets/images/sec02-img04.jpg);
+		}
+	}
+
+	&--05 {
+		&::before {
+			background-image: url(/assets/images/sec02-img05.jpg);
+		}
+	}
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
+
+	&__figure {
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		width: 57%;
+		max-height: 400px;
+		align-self: center;
+
+		img {
+			width: 100%;
+			align-self: center;
+		}
+	}
+
+	&__text {
+		position: relative;
+		width: 43%;
+		padding: 20px 60px;
+		color: #fff;
+
+		.heading {
+
+		}
+
+		.lead {
+			font-size: 20px;
+			line-height: 34px;
+			letter-spacing: 0.2px;
+		}
+	}
+}

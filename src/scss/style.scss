@@ -11,9 +11,11 @@ body {
 	position: relative;
 	min-height: 615px;
 	padding-right: 60px;
-	padding-left: 215px;
+	padding-left: 15%;
 	background: url(/assets/images/mv-bg01.jpg) no-repeat center/cover;
-
+	@media screen and (max-width: 599px) {
+		min-height: 320px;
+	}
 	&__logo {
 		position: absolute;
 		top: 0;
@@ -29,23 +31,40 @@ body {
 		font-size: 48px;
 		line-height: 72px;
 		align-self: center;
+		@media screen and (max-width: 599px) {
+			font-size: 24px;
+			line-height: 36px;
+		}
 	}
 }
 
 .sec {
 	padding: 80px 60px;
-
+	@media screen and (max-width: 599px) {
+		padding: 40px 30px;
+	}
 	&--01 {
 		text-align: center;
-
+		@media screen and (max-width: 599px) {
+			img {
+				width: 80px;
+			}
+		}
 		.heading {
 			letter-spacing: 1px;
+			@media screen and (max-width: 599px) {
+				font-size: 24px;
+			}
 		}
 
 		.lead {
 			font-size: 20px;
 			line-height: 34px;
 			letter-spacing: 0.2px;
+			@media screen and (max-width: 599px) {
+				font-size: 15px;
+				line-height: 22.5px;		
+			}
 		}
 	}
 
@@ -61,7 +80,10 @@ body {
 	min-height: 400px;
 	align-items: center;
 	justify-content: space-between;
-
+	@media screen and (max-width: 599px) {
+			flex-flow: column nowrap;
+			min-height: 200px;
+	}
 	&::before {
 		display: block;
 		position: absolute;
@@ -111,6 +133,9 @@ body {
 
 	&--reverse {
 		flex-direction: row-reverse;
+		@media screen and (max-width: 599px) {
+			flex-flow: column nowrap;
+		}
 	}
 
 	&__picture {
@@ -120,7 +145,9 @@ body {
 		width: 57%;
 		max-height: 400px;
 		align-self: center;
-
+		@media screen and (max-width: 599px) {
+			width: 100%;
+		}
 		img {
 			width: 100%;
 			align-self: center;
@@ -132,15 +159,25 @@ body {
 		width: 43%;
 		padding: 20px 60px;
 		color: #fff;
-
+		
+		@media screen and (max-width: 599px) {
+			width: 100%;
+			padding: 10px 30px;
+		}
 		.heading {
-
+			@media screen and (max-width: 599px) {
+				font-size: 24px;
+			}
 		}
 
 		.lead {
 			font-size: 20px;
 			line-height: 34px;
 			letter-spacing: 0.2px;
+			@media screen and (max-width: 599px) {
+				font-size: 15px;
+				line-height: 22.5px;
+			}
 		}
 	}
 }
@@ -158,6 +195,9 @@ body {
 		width: 25%;
 		order: 1;
 		content: "";
+		@media screen and (max-width: 599px) {
+			width: 100%;
+		}
 	}
 
 	&::after {
@@ -165,6 +205,9 @@ body {
 		width: 25%;
 		order: 1;
 		content: "";
+		@media screen and (max-width: 599px) {
+			width: 100%;
+		}
 	}
 
 	&__item {
@@ -177,6 +220,9 @@ body {
 		text-align: center;
 		flex-direction: column;
 		align-items: center;
+		@media screen and (max-width: 599px) {
+			width: calc(100% - 30px);
+		}
 
 		.label {
 			margin-top: 0;
@@ -317,3 +363,4 @@ body {
 		}
 	}
 }
+

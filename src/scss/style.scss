@@ -12,7 +12,7 @@ body {
 	min-height: 615px;
 	padding-right: 60px;
 	padding-left: 215px;
-	background: url(/assets/images/mv-bg01.jpg) no-repeat center/cover;
+	background: url(../../assets/images/mv_bg01.jpg) no-repeat center/cover;
 
 	&__logo {
 		position: absolute;
@@ -80,32 +80,32 @@ body {
 	&--01 {
 
 		&::before {
-			background-image: url(/assets/images/sec02-img01.jpg);
+			background-image: url(../../assets/images/sec02_img01.jpg);
 		}
 	}
 
 	&--02 {
 
 		&::before {
-			background-image: url(/assets/images/sec02-img02.jpg);
+			background-image: url(../../assets/images/sec02_img02.jpg);
 		}
 	}
 
 	&--03 {
 		&::before {
-			background-image: url(/assets/images/sec02-img03.jpg);
+			background-image: url(../../assets/images/sec02_img03.jpg);
 		}
 	}
 
 	&--04 {
 		&::before {
-			background-image: url(/assets/images/sec02-img04.jpg);
+			background-image: url(../../assets/images/sec02_img04.jpg);
 		}
 	}
 
 	&--05 {
 		&::before {
-			background-image: url(/assets/images/sec02-img05.jpg);
+			background-image: url(../../assets/images/sec02_img05.jpg);
 		}
 	}
 

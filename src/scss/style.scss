@@ -63,7 +63,7 @@ body {
 			letter-spacing: 0.2px;
 			@media screen and (max-width: 599px) {
 				font-size: 15px;
-				line-height: 22.5px;		
+				line-height: 22.5px;
 			}
 		}
 	}
@@ -159,7 +159,7 @@ body {
 		width: 43%;
 		padding: 20px 60px;
 		color: #fff;
-		
+
 		@media screen and (max-width: 599px) {
 			width: 100%;
 			padding: 10px 30px;
@@ -286,6 +286,35 @@ body {
 		.interest {
 			margin-top: 20px;
 			margin-bottom: 0;
+
+			.interest-list {
+				@include clearfix;
+				margin-left: -0.5em;
+				padding: 0;
+				line-height: 1.8;
+				list-style: none;
+
+				&__item {
+					display: inline-block;
+					padding-right: 8px;
+					padding-left: 8px;
+					border-radius: 2px;
+					background-color: #eee;
+					color: #666;
+					line-height: 1.6;
+
+					// &::after {
+					// 	content: ", ";
+					// }
+					//
+					// &:last-of-type {
+					//
+					// 	&::after {
+					// 		content: none;
+					// 	}
+					// }
+				}
+			}
 		}
 
 		.sns {
@@ -293,74 +322,76 @@ body {
 			margin-top: 35px;
 			flex-grow: 1;
 			align-items: flex-end;
-		}
-	}
-}
 
-.interest-list {
-	@include clearfix;
-	margin-left: -0.5em;
-	padding: 0;
-	line-height: 1.8;
-	list-style: none;
+			.sns-list {
+				display: inline-flex;
+				padding: 0;
+				list-style: none;
 
-	&__item {
-		display: inline-block;
-		padding-right: 8px;
-		padding-left: 8px;
-		border-radius: 2px;
-		background-color: #eee;
-		color: #666;
-		line-height: 1.6;
+				&__item {
+					margin-right: 5px;
+					margin-left: 5px;
 
-		// &::after {
-		// 	content: ", ";
-		// }
-		//
-		// &:last-of-type {
-		//
-		// 	&::after {
-		// 		content: none;
-		// 	}
-		// }
-	}
-}
+					.icon {
+						display: flex;
+						width: 37px;
+						height: 37px;
+						border-radius: 50%;
+						color: #fff;
+						text-decoration: none;
+						justify-content: center;
+						align-items: center;
 
-.sns-list {
-	display: inline-flex;
-	padding: 0;
-	list-style: none;
+						&--twitter {
+							background-color: #1da1f2;
+						}
 
-	&__item {
-		margin-right: 5px;
-		margin-left: 5px;
+						&--facebook {
+							background-color: #3b5998;
+						}
 
-		.icon {
-			display: flex;
-			width: 37px;
-			height: 37px;
-			border-radius: 50%;
-			color: #fff;
-			text-decoration: none;
-			justify-content: center;
-			align-items: center;
+						&--github {
+							background-color: #999999;
+						}
 
-			&--twitter {
-				background-color: #1da1f2;
-			}
-
-			&--facebook {
-				background-color: #3b5998;
-			}
-
-			&--github {
-				background-color: #999999;
-			}
-
-			&--website {
-				background-color: #666666;
+						&--website {
+							background-color: #666666;
+						}
+					}
+				}
 			}
 		}
 	}
 }
 
+.footer {
+	display: flex;
+	min-height: 500px;
+	background-color: #0068b6;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (max-width: 599px) {
+		min-height: 320px;
+	}
+
+	&__sns {
+
+		.sns-list {
+			display: inline-flex;
+			margin: 0;
+			padding: 0;
+			font-size: 80px;
+			list-style: none;
+
+			&__item {
+				margin-right: 15px;
+				margin-left: 15px;
+
+				.icon {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

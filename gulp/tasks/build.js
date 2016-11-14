@@ -4,7 +4,7 @@ var runSequence = require('run-sequence');
 var build = function(done) {
 	return runSequence(
 		'clean',
-		'css', 'minify-image',
+		['css', 'minify-image'],
 		done
 	);
 };

@@ -8,7 +8,7 @@ var browserSync = require('browser-sync').get('Server 1');
 var minifyImage = function() {
 	return gulp.src([config.src + 'images/**/*', '!' + config.src + 'images/**/profile-b*.{gif,jpg,png}'])
 		.pipe($.imageResize({
-			width: 1200,
+			width: 800,
 			imageMagick: true,
 		}))
 		.pipe(gulp.dest(config.dest + 'images/'))

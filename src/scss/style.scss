@@ -53,10 +53,13 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
 		margin: 0;
-		padding: 15px;
-		background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.0));
+		filter: drop-shadow(0 0 6px hsla(0, 0%, 0%, 0.3));
+
+		a {
+			display: block;
+			padding: 5px 10px;
+		}
 	}
 
 	&__motto {

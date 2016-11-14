@@ -2,8 +2,36 @@
 
 @import "public/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 
+@font-face {
+	font-family: "源ノ角ゴシック JP";
+	font-weight: normal;
+	font-style: normal;
+	src: local("源ノ角ゴシック JP Regular"), local("SourceHanSansJP-Regular"), url("/assets/fonts/SourceHanSansJP-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "源柔ゴシックP";
+	font-weight: normal;
+	font-style: normal;
+	src: local("源柔ゴシックP Regular"), local("GenJyuuGothic-P-Regular"), url("/assets/fonts/GenJyuuGothic-P-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "源柔ゴシックP";
+	font-weight: bold;
+	font-style: normal;
+	src: local("源柔ゴシックP Bold"), local("GenJyuuGothic-P-Bold"), url("/assets/fonts/GenJyuuGothic-P-Bold.woff2") format("woff2");
+}
+
+%font-heading {
+	font-family: "源柔ゴシックP", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	letter-spacing: 2px;
+}
+
 body {
 	color: #333;
+	text-rendering: optimizeLegibility;
+	font-family: "源ノ角ゴシック JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .header {
@@ -33,8 +61,8 @@ body {
 
 	&__motto {
 		color: #fff;
+		@extend %font-heading;
 		font-size: 48px;
-		font-weight: bold;
 		line-height: 72px;
 		align-self: center;
 
@@ -80,7 +108,7 @@ body {
 		.heading {
 			margin-top: 20px;
 			margin-bottom: 0;
-			letter-spacing: 1px;
+			@extend %font-heading;
 
 			@media screen and (max-width: 480px) {
 				font-size: 24px;
@@ -219,6 +247,7 @@ body {
 		}
 
 		.heading {
+			@extend %font-heading;
 
 			@media screen and (max-width: 768px) {
 				margin-top: 0;
@@ -328,6 +357,7 @@ body {
 		.name {
 			margin-top: 10px;
 			margin-bottom: 0;
+			@extend %font-heading;
 			font-size: 26px;
 			line-height: normal;
 		}

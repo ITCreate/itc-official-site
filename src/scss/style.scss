@@ -318,7 +318,7 @@ body {
 		display: flex;
 		width: calc(25% - 30px);
 		margin: 10px 15px;
-		padding: 10px 15px;
+		padding: 10px 15px 35px;
 		border: 1px solid #ccc;
 		border-radius: 6px;
 		text-align: center;
@@ -347,7 +347,7 @@ body {
 		.picture {
 			overflow: hidden;
 			margin-top: 10px;
-			margin-bottom: 0;
+			margin-bottom: 10px;
 			border: 1px solid #ccc;
 			border-radius: 50%;
 			color: #fff;
@@ -359,7 +359,7 @@ body {
 		}
 
 		.name {
-			margin-top: 10px;
+			margin-top: 5px;
 			margin-bottom: 0;
 			@extend %font-heading;
 			font-size: 26px;
@@ -368,7 +368,7 @@ body {
 
 		.handle {
 			margin-top: 0;
-			margin-bottom: 0;
+			margin-bottom: 5px;
 			color: #666;
 			font-size: 18px;
 			line-height: normal;
@@ -376,14 +376,14 @@ body {
 
 		.class {
 			margin-top: 5px;
-			margin-bottom: 0;
+			margin-bottom: 5px;
 			font-size: 16px;
 			color: #999;
 		}
 
 		.interest {
-			margin-top: 20px;
-			margin-bottom: 0;
+			margin-top: 10px;
+			margin-bottom: 10px;
 
 			@media screen and (max-width: 480px) {
 				margin-top: 10px;
@@ -411,16 +411,16 @@ body {
 		.sns {
 			display: flex;
 			width: 100%;
-			margin-top: 25px;
-			margin-bottom: 30px;
+			margin-top: 20px;
+			margin-bottom: 5px;
 			flex-grow: 1;
 			justify-content: center;
 			align-items: flex-end;
 
-			@media screen and (max-width: 480px) {
-				margin-top: 10px;
-				margin-bottom: 30px;
-			}
+			/* @media screen and (max-width: 480px) {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			} */
 
 			.sns-list {
 				display: inline-flex;

@@ -12,6 +12,7 @@ var css = function() {
 		.pipe($.sourcemaps.init())
 			.pipe($.pleeease({
 				sass: true,
+				mqpacker: true,
 			}))
 			.pipe($.rename({
 				suffix: '.min',

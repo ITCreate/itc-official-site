@@ -5,6 +5,9 @@ var serve = require('./serve');
 var browserSync = require('browser-sync').get('Server 1');
 
 var watch = function() {
+	$.watch(config.src + 'ejs/**/*.ejs', function() {
+		return gulp.start('html');
+	});
 	$.watch(config.src + 'scss/**/*.scss', function() {
 		return gulp.start('css');
 	});

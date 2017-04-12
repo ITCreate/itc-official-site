@@ -7,7 +7,7 @@ var browserSync = require('browser-sync').get('Server 1');
 var css = function() {
 	return gulp.src(config.src + '/scss/**/*.scss')
 		.pipe($.plumber({
-			errorHandler: $.notify.onError("Error: <%= error.message %>")
+			errorHandler: $.notify.onError("Error: <%= error.message %>"),
 		}))
 		.pipe($.sourcemaps.init())
 			.pipe($.pleeease({

@@ -135,6 +135,10 @@ body {
 
 	&--02 {
 		padding: 0;
+
+		@media screen and (max-width: 768px) {
+			padding: 0;
+		}
 	}
 
 	&--03 {

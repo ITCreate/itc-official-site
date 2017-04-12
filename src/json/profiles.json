@@ -1,0 +1,298 @@
+{
+	"profiles": [
+		{
+			"id": "b4079",
+			"position": "部長",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "山崎 好洋",
+			"nickname": "44",
+			"avatar": "/assets/images/profile-b4079.jpg",
+			"interests": [
+				{
+					"term": "Web"
+				},
+				{
+					"term": "Vue.js"
+				},
+				{
+					"term": "Laravel"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/44x1carbon",
+				"facebook": "https://www.facebook.com/44x1carbon",
+				"github": "https://github.com/44x1carbon"
+			}
+		},
+		{
+			"id": "b4097",
+			"position": "副部長",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "渕田 恭秀",
+			"nickname": "ふっちー",
+			"avatar": "/assets/images/profile-b4097.jpg",
+			"interests": [
+				{
+					"term": "Web"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/fuchi_ll",
+				"github": "https://github.com/fuchi15"
+			}
+		},
+		{
+			"id": "b6232",
+			"position": "部員",
+			"course": "ゲームプログラマー専攻 1 年",
+			"realname": "伯 健弘",
+			"nickname": "もぐぅ",
+			"avatar": "/assets/images/profile-b6232.jpg",
+			"interests": [
+				{
+					"term": "Unity"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/mogus_workshop",
+				"facebook": "https://www.facebook.com/mogus.workshop",
+				"github": "https://github.com/mogumannto"
+			}
+		},
+		{
+			"id": "empty",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 1 年",
+			"realname": "竹川 翔悟",
+			"nickname": "そぉい。",
+			"interests": [
+				{
+					"term": "Programming"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/tttyya"
+			}
+		},
+		{
+			"id": "b6123",
+			"position": "部員",
+			"course": "ゲームデザイナー専攻 1 年",
+			"realname": "嶋田 一輝",
+			"nickname": "嶋ちゃん",
+			"avatar": "/assets/images/profile-b6123.jpg",
+			"interests": [
+				{
+					"term": "HTML"
+				},
+				{
+					"term": "Unreal Engine 4"
+				},
+				{
+					"term": "Unity"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/oekaki_pin"
+			}
+		},
+		{
+			"id": "b6099",
+			"position": "部員",
+			"course": "ネットワークセキュリティ専攻 1 年",
+			"realname": "甲村 迅",
+			"nickname": "Vys",
+			"avatar": "/assets/images/profile-b6099.jpg",
+			"interests": [
+				{
+					"term": "Network"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/Ortsyb",
+				"facebook": "https://www.facebook.com/ortsyb",
+				"github": "https://github.com/Ortsyb"
+			}
+		},
+		{
+			"id": "b5331",
+			"position": "部員",
+			"course": "システムエンジニアコース専攻 2 年",
+			"realname": "古賀 友輝",
+			"nickname": "がっちゃん",
+			"avatar": "/assets/images/profile-b5331.jpg",
+			"interests": [
+				{
+					"term": "Web Front-end"
+				},
+				{
+					"term": "Java"
+				},
+				{
+					"term": "Ubuntu"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/ahaha0807_alg",
+				"facebook": "https://www.facebook.com/ahaha0807.alg",
+				"github": "https://github.com/ahaha0807"
+			}
+		},
+		{
+			"id": "b5205",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 2 年",
+			"realname": "日下部 拓人",
+			"nickname": "marimo",
+			"avatar": "/assets/images/profile-b5205.jpg",
+			"interests": [
+				{
+					"term": "Ruby"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/hanaitimonme46",
+				"facebook": "https://www.facebook.com/takuto.kusakabe",
+				"github": "https://github.com/t-kusakabe"
+			}
+		},
+		{
+			"id": "b5005",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 2 年",
+			"realname": "宮前 椋平",
+			"nickname": "ema",
+			"avatar": "/assets/images/profile-b5005.png",
+			"interests": [
+				{
+					"term": "JavaScript"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/emayami_r"
+			}
+		},
+		{
+			"id": "empty",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "川村 結李",
+			"nickname": "-",
+			"interests": [
+				{
+					"term": "Unity"
+				}
+			]
+		},
+		{
+			"id": "b4097",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "-",
+			"nickname": "ぐっち",
+			"interests": [
+				{
+					"term": "Web"
+				},
+				{
+					"term": "Network"
+				}
+			]
+		},
+		{
+			"id": "b4183",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "山腰 知典",
+			"nickname": "やまごん",
+			"avatar": "/assets/images/profile-b4183.jpg",
+			"interests": [
+				{
+					"term": "Selenium"
+				},
+				{
+					"term": "JavaScript"
+				},
+				{
+					"term": "Python"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/ymgn_ll",
+				"facebook": "https://www.facebook.com/profile.php?id=100010162450532",
+				"github": "https://github.com/ymgn"
+			}
+		},
+		{
+			"id": "empty",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "山口 秀康",
+			"nickname": "hide",
+			"sns": {
+				"twitter": "https://twitter.com/hide_clone"
+			}
+		},
+		{
+			"id": "empty",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "下西 里奈",
+			"nickname": "さとな助",
+			"interests": [
+				{
+					"term": "Web"
+				},
+				{
+					"term": "Unity"
+				}
+			],
+			"sns": {
+				"facebook": "http://www.facebook.com/profile.php?id=100013915394008"
+			}
+		},
+		{
+			"id": "b4049",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "松本 尚",
+			"nickname": "ひ",
+			"avatar": "/assets/images/profile-b4049.jpg",
+			"interests": [
+				{
+					"term": "Web"
+				},
+				{
+					"term": "Laravel"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/h_m_19960126"
+			}
+		},
+		{
+			"id": "b3132",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 4 年",
+			"realname": "福壽 卓哉",
+			"nickname": "Chalk",
+			"avatar": "/assets/images/profile-b3132.jpg",
+			"interests": [
+				{
+					"term": "Web Front-end"
+				},
+				{
+					"term": "Web Design"
+				},
+				{
+					"term": "Media Art"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/chalkygames123",
+				"facebook": "https://www.facebook.com/chalkygames123",
+				"github": "https://github.com/chalkygames123"
+			}
+		}
+	]
+}

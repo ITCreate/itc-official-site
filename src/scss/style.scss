@@ -142,15 +142,6 @@ body {
 	}
 
 	&--03 {
-		padding: 30px;
-
-		@media screen and (min-width: 480px) {
-			padding: 30px 15px;
-		}
-
-		@media screen and (min-width: 768px) {
-			padding: 70px 60px;
-		}
 	}
 }
 
@@ -270,7 +261,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0;
+	margin: -20px 0 0 0;
 	padding: 0;
 	list-style: none;
 
@@ -301,19 +292,18 @@ body {
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		margin: 10px 0;
+		margin-top: 20px;
 		padding: 10px 15px 35px;
 		border: 1px solid #ccc;
 		border-radius: 6px;
 		text-align: center;
 
 		@media screen and (min-width: 480px) {
-			width: calc(50% - 30px);
-			margin: 10px 15px;
+			width: calc(50% - 10px);
 		}
 
 		@media screen and (min-width: 768px) {
-			width: calc(25% - 30px);
+			width: calc(25% - 15px);
 		}
 
 		.label {

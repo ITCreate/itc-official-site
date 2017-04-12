@@ -5,9 +5,10 @@ var del = require('del');
 
 var clean = function() {
 	return del([
-		config.dest + '**/*',
-		'!' + config.dest + '.gitkeep',
-		'!' + config.dest + 'bower_components{,/**/*}',
+		config.dest + '/**/*',
+		'!' + config.dest + '/**/.gitkeep',
+		'!' + config.assets + '{,/**/.gitkeep}',
+		'!' + config.bower + '{,/**/*}',
 	], {
 		dot: true,
 	});

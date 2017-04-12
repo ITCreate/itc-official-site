@@ -6,23 +6,23 @@ var serve = require('./serve');
 var browserSync = require('browser-sync').get('Server 1');
 
 var minifyImage = function() {
-	return gulp.src([config.src + 'images/**/*', '!' + config.src + 'images/**/profile-b*.{gif,jpg,png}'])
+	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/profile-b*.{gif,jpg,png}'])
 		.pipe($.imageResize({
 			width: 800,
 			imageMagick: true,
 		}))
-		.pipe(gulp.dest(config.dest + 'images/'))
+		.pipe(gulp.dest(config.assets + '/images'))
 		.on('end', function() {
-			gulp.src(config.src + 'images/**/profile-b*.{gif,jpg,png}')
+			gulp.src(config.src + '/images/**/profile-b*.{gif,jpg,png}')
 				.pipe($.imageResize({
 					width: 160,
 					height: 160,
 					crop: true,
 					imageMagick: true,
 				}))
-				.pipe(gulp.dest(config.dest + 'images/'))
+				.pipe(gulp.dest(config.assets + '/images'))
 				.on('end', function() {
-					gulp.src(config.dest + 'images/**/*.{gif,jpg,png,svg}')
+					gulp.src(config.assets + '/images/**/*.{gif,jpg,png,svg}')
 					.pipe($.imagemin([
 						$.imagemin.gifsicle({
 							optimizationLevel: 3,
@@ -37,8 +37,8 @@ var minifyImage = function() {
 						$.imagemin.svgo(),
 					]))
 					.pipe($.imagemin())
-					.pipe(gulp.dest(config.dest + 'images/'))
-					.pipe(browserSync.stream({match: config.dest + 'images/**/*.{gif,jpg,png,svg}'}));
+					.pipe(gulp.dest(config.assets + '/images'))
+					.pipe(browserSync.stream({match: config.assets + '/images/**/*.{gif,jpg,png,svg}'}));
 				});
 		});
 };

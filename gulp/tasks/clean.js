@@ -7,6 +7,7 @@ var clean = function() {
 	return del([
 		config.dest + '**/*',
 		'!' + config.dest + '.gitkeep',
+		'!' + config.dest + 'bower_components{,/**/*}',
 	], {
 		dot: true,
 	});

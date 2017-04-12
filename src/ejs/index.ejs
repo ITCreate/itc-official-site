@@ -16,7 +16,7 @@
 	<header>
 		<div class="header">
 			<h1 class="header__logo">
-				<a href="/">
+				<a href="/" class="link">
 					<img src="/assets/images/itc-logo.png" srcset="/assets/images/itc-logo.png 1x, /assets/images/itc-logo@2x.png 2x" alt="ITCreate部のロゴ">
 				</a>
 			</h1>
@@ -43,57 +43,67 @@
 
 	<div class="sec sec--02">
 		<section>
-			<div class="feature feature--01">
-				<div class="feature__picture">
-					<img src="/assets/images/sec02-img01.jpg" alt="">
-				</div>
+			<div class="feature feature--01 feature--reverse">
 				<div class="feature__text">
 					<h1 class="heading"><i class="fa fa-pencil"></i> 勉強会</h1>
 					<p class="lead">GitHub や C 言語など IT 分野をメインに学内で勉強会を開催しています。部員がメンターとして参加することで新たなる技術を学ぶきっかけにもなります。</p>
 				</div>
+				<div class="feature__picture">
+					<p class="picture">
+						<img src="/assets/images/sec02-img01.jpg" alt="" class="picture__img">
+					</p>
+				</div>
 			</div>
 		</section>
 		<section>
-			<div class="feature feature--02 feature--reverse">
-				<div class="feature__picture">
-					<img src="/assets/images/sec02-img02.jpg" alt="">
-				</div>
+			<div class="feature feature--02">
 				<div class="feature__text">
 					<h1 class="heading"><i class="fa fa-rocket"></i> 合宿</h1>
 					<p class="lead">2 泊 3 日、ネットワークの構築、BBQ 、LT 大会、24 時間ハッカソンと 3 日間ともに過ごし交流を深める ITCreate 部のメインイベントです。</p>
 				</div>
+				<div class="feature__picture">
+					<p class="picture">
+						<img src="/assets/images/sec02-img02.jpg" alt="" class="picture__img">
+					</p>
+				</div>
 			</div>
 		</section>
 		<section>
-			<div class="feature feature--03">
-				<div class="feature__picture">
-					<img src="/assets/images/sec02-img03.jpg" alt="">
-				</div>
+			<div class="feature feature--03 feature--reverse">
 				<div class="feature__text">
 					<h1 class="heading"><i class="fa fa-code"></i> メディアフロンティア</h1>
 					<p class="lead">2 月に OIC で開催される学生作品展です。第 15 回より教室を 1 つお借りして ITC ブースを出しております。業界の方々や一般の方に見ていただける 1 年の集大成となるイベントです。</p>
 				</div>
+				<div class="feature__picture">
+					<p class="picture">
+						<img src="/assets/images/sec02-img03.jpg" alt="" class="picture__img">
+					</p>
+				</div>
 			</div>
 		</section>
 		<section>
-			<div class="feature feature--04 feature--reverse">
-				<div class="feature__picture">
-					<img src="/assets/images/sec02-img04.jpg" alt="">
-				</div>
+			<div class="feature feature--04">
 				<div class="feature__text">
 					<h1 class="heading"><i class="fa fa-comments"></i> 報告会</h1>
 					<p class="lead">毎月、月初めに先月やったこと、今月やりたいことを報告する場を設けております。新しい技術を知るきっかけにもなります。報告会を通して新たなアイデアや作品を生んでいきたいと思っています。</p>
 				</div>
+				<div class="feature__picture">
+					<p class="picture">
+						<img src="/assets/images/sec02-img04.jpg" alt="" class="picture__img">
+					</p>
+				</div>
 			</div>
 		</section>
 		<section>
-			<div class="feature feature--05">
-				<div class="feature__picture">
-					<img src="/assets/images/sec02-img05.jpg" alt="">
-				</div>
+			<div class="feature feature--05 feature--reverse">
 				<div class="feature__text">
 					<h1 class="heading"><i class="fa fa-users"></i> 学生スタッフ</h1>
 					<p class="lead">カンファレンスなどに学生スタッフとして参加し、現場のエンジニア達と一緒にイベント運営をすることで、現場の技術や雰囲気を学んでいます。</p>
+				</div>
+				<div class="feature__picture">
+					<p class="picture">
+						<img src="/assets/images/sec02-img05.jpg" alt="" class="picture__img">
+					</p>
 				</div>
 			</div>
 		</section>
@@ -105,17 +115,17 @@
 			<ul class="card-list">
 				<% profiles.forEach(function(profile) { %>
 					<li class="card-list__item">
-						<p class="label"><%- profile.position %></p>
-						<p class="picture">
+						<p class="position"><%- profile.position %></p>
+						<p class="avatar">
 							<% if (profile.avatar) { %>
-								<img src="<%= profile.avatar %>" alt="" class="picture__content">
+								<img src="<%= profile.avatar %>" alt="" class="avatar__img">
 							<% } else { %>
-								<img src="/assets/images/profile-empty.png" alt="" class="picture__content">
+								<img src="/assets/images/profile-empty.png" alt="" class="avatar__img">
 							<% } %>
 						</p>
-						<p class="name"><%- profile.realname %></p>
-						<p class="handle"><%- profile.nickname %></p>
-						<p class="class"><%- profile.course %></p>
+						<p class="realname"><%- profile.realname %></p>
+						<p class="nickname"><%- profile.nickname %></p>
+						<p class="course"><%- profile.course %></p>
 						<% if (profile.interests) { %>
 							<div class="interest">
 								<ul class="interest-list">

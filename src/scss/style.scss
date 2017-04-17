@@ -147,7 +147,7 @@ body {
 
 .feature {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
@@ -185,7 +185,6 @@ body {
 	}
 
 	&--reverse {
-		flex-direction: column;
 
 		@media screen and (min-width: 768px) {
 			flex-direction: row-reverse;

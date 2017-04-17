@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "sanitize-css": "^4.1.0",
+    "sanitize-css": "^5.0.0",
     "bourbon": "^4.2.7"
   }
 }

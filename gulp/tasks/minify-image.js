@@ -9,7 +9,6 @@ var minifyImage = function() {
 	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/profile-b*.{gif,jpg,png}'])
 		.pipe($.imageResize({
 			width: 800,
-			imageMagick: true,
 		}))
 		.pipe(gulp.dest(config.assets + '/images'))
 		.on('end', function() {
@@ -18,7 +17,6 @@ var minifyImage = function() {
 					width: 160,
 					height: 160,
 					crop: true,
-					imageMagick: true,
 				}))
 				.pipe(gulp.dest(config.assets + '/images'))
 				.on('end', function() {

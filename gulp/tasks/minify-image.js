@@ -34,7 +34,6 @@ var minifyImage = function() {
 						}),
 						$.imagemin.svgo(),
 					]))
-					.pipe($.imagemin())
 					.pipe(gulp.dest(config.dest + '/assets/images'))
 					.pipe(browserSync.stream({match: config.dest + '/assets/images/**/*.{gif,jpg,png,svg}'}));
 				});

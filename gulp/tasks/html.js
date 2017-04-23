@@ -16,7 +16,7 @@ var html = function() {
 		.pipe($.rename({
 			extname: '.html',
 		}))
-		.pipe(gulp.dest(config.root + '/public'));
+		.pipe(gulp.dest(config.dest));
 };
 
 gulp.task('html', html);

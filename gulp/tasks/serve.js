@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create('Server 1');
 
 var serve = function() {
 	return browserSync.init({
-		server: config.root + '/public',
+		server: config.dest,
 		browser: "google chrome",
 	});
 };

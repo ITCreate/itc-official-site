@@ -10,7 +10,7 @@ var minifyImage = function() {
 		.pipe($.imageResize({
 			width: 800,
 		}))
-		.pipe(gulp.dest(config.assets + '/images'))
+		.pipe(gulp.dest(config.dest + '/assets/images'))
 		.on('end', function() {
 			gulp.src(config.src + '/images/**/profile-b*.{gif,jpg,png}')
 				.pipe($.imageResize({
@@ -18,9 +18,9 @@ var minifyImage = function() {
 					height: 160,
 					crop: true,
 				}))
-				.pipe(gulp.dest(config.assets + '/images'))
+				.pipe(gulp.dest(config.dest + '/assets/images'))
 				.on('end', function() {
-					gulp.src(config.assets + '/images/**/*.{gif,jpg,png,svg}')
+					gulp.src(config.dest + '/assets/images/**/*.{gif,jpg,png,svg}')
 					.pipe($.imagemin([
 						$.imagemin.gifsicle({
 							optimizationLevel: 3,
@@ -35,8 +35,8 @@ var minifyImage = function() {
 						$.imagemin.svgo(),
 					]))
 					.pipe($.imagemin())
-					.pipe(gulp.dest(config.assets + '/images'))
-					.pipe(browserSync.stream({match: config.assets + '/images/**/*.{gif,jpg,png,svg}'}));
+					.pipe(gulp.dest(config.dest + '/assets/images'))
+					.pipe(browserSync.stream({match: config.dest + '/assets/images/**/*.{gif,jpg,png,svg}'}));
 				});
 		});
 };

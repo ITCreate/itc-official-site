@@ -22,8 +22,8 @@ var css = function() {
 			includeContent: false,
 			sourceRoot: config.src + '/scss',
 		}))
-		.pipe(gulp.dest(config.assets + '/css'))
-		.pipe(browserSync.stream({match: config.assets + '/css/**/*.css'}));
+		.pipe(gulp.dest(config.dest + '/assets/css'))
+		.pipe(browserSync.stream({match: config.dest + '/assets/css/**/*.css'}));
 };
 
 gulp.task('css', css);

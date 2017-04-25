@@ -14,6 +14,7 @@ var css = function() {
 				sass: {
 					includePaths: [
 						config.src + '/scss',
+						require('node-bourbon').includePaths,
 					],
 				},
 				mqpacker: true,

@@ -11,7 +11,11 @@ var css = function() {
 		}))
 		.pipe($.sourcemaps.init())
 			.pipe($.pleeease({
-				sass: true,
+				sass: {
+					includePaths: [
+						config.src + '/scss',
+					],
+				},
 				mqpacker: true,
 			}))
 			.pipe($.rename({

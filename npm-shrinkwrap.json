@@ -391,6 +391,12 @@
       "resolved": "https://registry.npmjs.org/boom/-/boom-2.10.1.tgz",
       "dev": true
     },
+    "bourbon": {
+      "version": "4.3.4",
+      "from": "bourbon@>=4.2.6 <5.0.0",
+      "resolved": "https://registry.npmjs.org/bourbon/-/bourbon-4.3.4.tgz",
+      "dev": true
+    },
     "brace-expansion": {
       "version": "1.1.7",
       "from": "brace-expansion@>=1.0.0 <2.0.0",
@@ -4275,6 +4281,12 @@
       "version": "0.6.1",
       "from": "negotiator@0.6.1",
       "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz",
+      "dev": true
+    },
+    "node-bourbon": {
+      "version": "4.2.8",
+      "from": "node-bourbon@latest",
+      "resolved": "https://registry.npmjs.org/node-bourbon/-/node-bourbon-4.2.8.tgz",
       "dev": true
     },
     "node-gyp": {

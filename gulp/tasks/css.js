@@ -12,10 +12,10 @@ var css = function() {
 		.pipe($.sourcemaps.init())
 			.pipe($.pleeease({
 				sass: {
-					includePaths: [
+					includePaths: require('node-bourbon').with([
 						config.src + '/scss',
-						require('node-bourbon').includePaths,
-					],
+						require('node-font-awesome').scssPath,
+					]),
 				},
 				mqpacker: true,
 			}))

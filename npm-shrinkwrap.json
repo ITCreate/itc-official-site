@@ -1704,6 +1704,12 @@
       "resolved": "https://registry.npmjs.org/flagged-respawn/-/flagged-respawn-0.3.2.tgz",
       "dev": true
     },
+    "font-awesome": {
+      "version": "4.7.0",
+      "from": "font-awesome@>=4.4.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz",
+      "dev": true
+    },
     "for-in": {
       "version": "1.0.2",
       "from": "for-in@>=1.0.1 <2.0.0",
@@ -4287,6 +4293,12 @@
       "version": "4.2.8",
       "from": "node-bourbon@latest",
       "resolved": "https://registry.npmjs.org/node-bourbon/-/node-bourbon-4.2.8.tgz",
+      "dev": true
+    },
+    "node-font-awesome": {
+      "version": "1.0.2",
+      "from": "node-font-awesome@latest",
+      "resolved": "https://registry.npmjs.org/node-font-awesome/-/node-font-awesome-1.0.2.tgz",
       "dev": true
     },
     "node-gyp": {

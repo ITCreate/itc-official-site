@@ -1,8 +1,6 @@
 var gulp = require('gulp');
 var config = require('../config');
 var $ = require('gulp-load-plugins')();
-var serve = require('./serve');
-var browserSync = require('browser-sync').get('Server 1');
 
 var css = function() {
 	return gulp.src(config.src + '/scss/**/*.scss')
@@ -28,7 +26,7 @@ var css = function() {
 			sourceRoot: config.src + '/scss',
 		}))
 		.pipe(gulp.dest(config.dest + '/assets/css'))
-		.pipe(browserSync.stream({match: config.dest + '/assets/css/**/*.css'}));
+		.pipe(config.browserSync.stream({match: config.dest + '/assets/css/**/*.css'}));
 };
 
 gulp.task('css', css);

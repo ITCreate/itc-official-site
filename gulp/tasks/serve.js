@@ -1,10 +1,9 @@
 var gulp = require('gulp');
 var config = require('../config');
 var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync').create('Server 1');
 
 var serve = function() {
-	return browserSync.init({
+	return config.browserSync.init({
 		server: config.dest,
 		browser: "google chrome",
 	});

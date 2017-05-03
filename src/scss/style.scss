@@ -182,6 +182,10 @@ body {
 			&::before {
 				background-image: url("/assets/images/sec02-img0#{$i}.jpg");
 			}
+
+			.webp &::before {
+				background-image: url("/assets/images/sec02-img0#{$i}.webp");
+			}
 		}
 	}
 

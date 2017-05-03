@@ -17,7 +17,10 @@
 		<div class="header">
 			<h1 class="header__logo">
 				<a href="/" class="link">
-					<img src="/assets/images/itc-logo.png" srcset="/assets/images/itc-logo.png 1x, /assets/images/itc-logo@2x.png 2x" alt="ITCreate部のロゴ">
+					<picture>
+						<source srcset="/assets/images/itc-logo.webp 1x, /assets/images/itc-logo@2x.webp 2x" type="image/webp">
+						<img src="/assets/images/itc-logo.png" srcset="/assets/images/itc-logo.png 1x, /assets/images/itc-logo@2x.png 2x" alt="ITCreate部のロゴ">
+					</picture>
 				</a>
 			</h1>
 			<p class="header__motto">
@@ -31,7 +34,10 @@
 
 	<div class="sec sec--01">
 		<section>
-			<img src="/assets/images/itc-sticker.png" alt="ITCreate部のステッカー" width="160" class="sticker">
+			<picture>
+				<source srcset="/assets/images/itc-sticker.webp" type="image/webp">
+				<img src="/assets/images/itc-sticker.png" alt="ITCreate部のステッカー" width="160" class="sticker">
+			</picture>
 			<h1 class="heading">ITCreate部とは？</h1>
 			<p class="lead">
 				やりたいことをやるただそれだけの部活です。<br>
@@ -50,7 +56,10 @@
 				</div>
 				<div class="feature__picture">
 					<p class="picture">
-						<img src="/assets/images/sec02-img01.jpg" alt="" class="picture__img">
+						<picture>
+							<source srcset="/assets/images/sec02-img01.webp" type="image/webp">
+							<img src="/assets/images/sec02-img01.jpg" alt="" class="picture__img">
+						</picture>
 					</p>
 				</div>
 			</div>
@@ -63,7 +72,10 @@
 				</div>
 				<div class="feature__picture">
 					<p class="picture">
-						<img src="/assets/images/sec02-img02.jpg" alt="" class="picture__img">
+						<picture>
+							<source srcset="/assets/images/sec02-img02.webp" type="image/webp">
+							<img src="/assets/images/sec02-img02.jpg" alt="" class="picture__img">
+						</picture>
 					</p>
 				</div>
 			</div>
@@ -76,7 +88,10 @@
 				</div>
 				<div class="feature__picture">
 					<p class="picture">
-						<img src="/assets/images/sec02-img03.jpg" alt="" class="picture__img">
+						<picture>
+							<source srcset="/assets/images/sec02-img03.webp" type="image/webp">
+							<img src="/assets/images/sec02-img03.jpg" alt="" class="picture__img">
+						</picture>
 					</p>
 				</div>
 			</div>
@@ -89,7 +104,10 @@
 				</div>
 				<div class="feature__picture">
 					<p class="picture">
-						<img src="/assets/images/sec02-img04.jpg" alt="" class="picture__img">
+						<picture>
+							<source srcset="/assets/images/sec02-img04.webp" type="image/webp">
+							<img src="/assets/images/sec02-img04.jpg" alt="" class="picture__img">
+						</picture>
 					</p>
 				</div>
 			</div>
@@ -102,7 +120,10 @@
 				</div>
 				<div class="feature__picture">
 					<p class="picture">
-						<img src="/assets/images/sec02-img05.jpg" alt="" class="picture__img">
+						<picture>
+							<source srcset="/assets/images/sec02-img05.webp" type="image/webp">
+							<img src="/assets/images/sec02-img05.jpg" alt="" class="picture__img">
+						</picture>
 					</p>
 				</div>
 			</div>
@@ -118,9 +139,15 @@
 						<p class="position"><%- profile.position %></p>
 						<p class="avatar">
 							<% if (profile.avatarExt) { %>
-								<img src="/assets/images/avatar-<%= profile.id %>.<%= profile.avatarExt %>" alt="" class="avatar__img">
+								<picture>
+									<source srcset="/assets/images/avatar-<%= profile.id %>.webp" type="image/webp">
+									<img src="/assets/images/avatar-<%= profile.id %>.<%= profile.avatarExt %>" alt="" class="avatar__img">
+								</picture>
 							<% } else { %>
-								<img src="/assets/images/avatar-empty.png" alt="" class="avatar__img">
+								<picture>
+									<source srcset="/assets/images/avatar-empty.webp" type="image/webp">
+									<img src="/assets/images/avatar-empty.png" alt="" class="avatar__img">
+								</picture>
 							<% } %>
 						</p>
 						<p class="realname"><%- profile.realname %></p>

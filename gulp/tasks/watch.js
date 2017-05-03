@@ -15,7 +15,9 @@ var watch = function() {
 	$.watch(config.src + '/images/**/*.{gif,jpg,png,svg}', function() {
 		return gulp.start('minify-image');
 	});
-	$.watch(config.root + '/public/**/*.html').on('change', config.browserSync.reload);
+	$.watch(config.src + '/ejs/**/*.ejs', function() {
+		return gulp.start('html');
+	});
 };
 
 gulp.task('watch', watch);

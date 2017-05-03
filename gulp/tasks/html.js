@@ -16,7 +16,10 @@ var html = function() {
 		.pipe($.rename({
 			extname: '.html',
 		}))
-		.pipe(gulp.dest(config.dest));
+		.pipe(gulp.dest(config.dest))
+	.on('end', function() {
+		config.browserSync.reload();
+	});
 };
 
 gulp.task('html', html);

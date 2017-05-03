@@ -4,13 +4,13 @@ var $ = require('gulp-load-plugins')();
 var imageminPngquant = require('imagemin-pngquant');
 
 var minifyImage = function() {
-	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/profile-b*.{gif,jpg,png}'])
+	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/avatar-*.{gif,jpg,png}'])
 		.pipe($.imageResize({
 			width: 800,
 		}))
 		.pipe(gulp.dest(config.dest + '/assets/images'))
 	.on('end', function() {
-		gulp.src(config.src + '/images/**/profile-b*.{gif,jpg,png}')
+		gulp.src(config.src + '/images/**/avatar-*.{gif,jpg,png}')
 			.pipe($.imageResize({
 				width: 160,
 				height: 160,

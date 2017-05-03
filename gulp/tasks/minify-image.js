@@ -9,33 +9,33 @@ var minifyImage = function() {
 			width: 800,
 		}))
 		.pipe(gulp.dest(config.dest + '/assets/images'))
+	.on('end', function() {
+		gulp.src(config.src + '/images/**/profile-b*.{gif,jpg,png}')
+			.pipe($.imageResize({
+				width: 160,
+				height: 160,
+				crop: true,
+			}))
+			.pipe(gulp.dest(config.dest + '/assets/images'))
 		.on('end', function() {
-			gulp.src(config.src + '/images/**/profile-b*.{gif,jpg,png}')
-				.pipe($.imageResize({
-					width: 160,
-					height: 160,
-					crop: true,
-				}))
+			gulp.src(config.dest + '/assets/images/**/*.{gif,jpg,png,svg}')
+				.pipe($.imagemin([
+					$.imagemin.gifsicle({
+						optimizationLevel: 3,
+					}),
+					imageminPngquant({
+						quality: '70-80',
+						speed: 1,
+					}),
+					$.imagemin.jpegtran({
+						progressive: true,
+					}),
+					$.imagemin.svgo(),
+				]))
 				.pipe(gulp.dest(config.dest + '/assets/images'))
-				.on('end', function() {
-					gulp.src(config.dest + '/assets/images/**/*.{gif,jpg,png,svg}')
-					.pipe($.imagemin([
-						$.imagemin.gifsicle({
-							optimizationLevel: 3,
-						}),
-						imageminPngquant({
-							quality: '70-80',
-							speed: 1,
-						}),
-						$.imagemin.jpegtran({
-							progressive: true,
-						}),
-						$.imagemin.svgo(),
-					]))
-					.pipe(gulp.dest(config.dest + '/assets/images'))
-					.pipe(config.browserSync.stream({match: config.dest + '/assets/images/**/*.{gif,jpg,png,svg}'}));
-				});
+				.pipe(config.browserSync.stream({match: config.dest + '/assets/images/**/*.{gif,jpg,png,svg}'}));
 		});
+	});
 };
 
 gulp.task('minify-image', minifyImage);

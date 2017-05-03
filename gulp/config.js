@@ -5,4 +5,5 @@ module.exports = {
 	root: root,
 	src: root + '/src',
 	dest: root + '/public',
+	browserSync: require('browser-sync').create(),
 };

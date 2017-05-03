@@ -2,8 +2,6 @@ var gulp = require('gulp');
 var config = require('../config');
 var $ = require('gulp-load-plugins')();
 var imageminPngquant = require('imagemin-pngquant');
-var serve = require('./serve');
-var browserSync = require('browser-sync').get('Server 1');
 
 var minifyImage = function() {
 	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/profile-b*.{gif,jpg,png}'])
@@ -35,7 +33,7 @@ var minifyImage = function() {
 						$.imagemin.svgo(),
 					]))
 					.pipe(gulp.dest(config.dest + '/assets/images'))
-					.pipe(browserSync.stream({match: config.dest + '/assets/images/**/*.{gif,jpg,png,svg}'}));
+					.pipe(config.browserSync.stream({match: config.dest + '/assets/images/**/*.{gif,jpg,png,svg}'}));
 				});
 		});
 };

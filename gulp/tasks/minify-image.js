@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var config = require('../config');
 var $ = require('gulp-load-plugins')();
 var imageminPngquant = require('imagemin-pngquant');
+var imageminWebp = require('imagemin-webp');
 
 var minifyImage = function() {
 	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/avatar-*.{gif,jpg,png}'])
@@ -33,7 +34,19 @@ var minifyImage = function() {
 					$.imagemin.svgo(),
 				]))
 				.pipe(gulp.dest(config.dest + '/assets/images'))
-				.pipe(config.browserSync.stream());
+			.on('end', function() {
+				gulp.src(config.dest + '/assets/images/**/*.{jpg,png}')
+					.pipe($.imagemin([
+						imageminWebp({
+							method: 6,
+						}),
+					]))
+					.pipe($.rename({
+						extname: '.webp',
+					}))
+					.pipe(gulp.dest(config.dest + '/assets/images'))
+					.pipe(config.browserSync.stream());
+			});
 		});
 	});
 };

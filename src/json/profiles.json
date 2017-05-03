@@ -6,7 +6,7 @@
 			"course": "IT スペシャリスト専攻 3 年",
 			"realname": "山崎 好洋",
 			"nickname": "44",
-			"avatar": "/assets/images/profile-b4079.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Web"
@@ -30,7 +30,7 @@
 			"course": "IT スペシャリスト専攻 3 年",
 			"realname": "渕田 恭秀",
 			"nickname": "ふっちー",
-			"avatar": "/assets/images/profile-b4097.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Web"
@@ -47,7 +47,7 @@
 			"course": "ゲームプログラマー専攻 1 年",
 			"realname": "伯 健弘",
 			"nickname": "もぐぅ",
-			"avatar": "/assets/images/profile-b6232.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Unity"
@@ -80,7 +80,7 @@
 			"course": "ゲームデザイナー専攻 1 年",
 			"realname": "嶋田 一輝",
 			"nickname": "嶋ちゃん",
-			"avatar": "/assets/images/profile-b6123.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "HTML"
@@ -102,7 +102,7 @@
 			"course": "ネットワークセキュリティ専攻 1 年",
 			"realname": "甲村 迅",
 			"nickname": "Vys",
-			"avatar": "/assets/images/profile-b6099.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Network"
@@ -120,7 +120,7 @@
 			"course": "システムエンジニアコース専攻 2 年",
 			"realname": "古賀 友輝",
 			"nickname": "がっちゃん",
-			"avatar": "/assets/images/profile-b5331.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Web Front-end"
@@ -144,7 +144,7 @@
 			"course": "IT スペシャリスト専攻 2 年",
 			"realname": "日下部 拓人",
 			"nickname": "marimo",
-			"avatar": "/assets/images/profile-b5205.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Ruby"
@@ -162,7 +162,7 @@
 			"course": "IT スペシャリスト専攻 2 年",
 			"realname": "宮前 椋平",
 			"nickname": "ema",
-			"avatar": "/assets/images/profile-b5005.png",
+			"avatarExt": "png",
 			"interests": [
 				{
 					"term": "JavaScript"
@@ -205,7 +205,7 @@
 			"course": "IT スペシャリスト専攻 3 年",
 			"realname": "山腰 知典",
 			"nickname": "やまごん",
-			"avatar": "/assets/images/profile-b4183.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Selenium"
@@ -257,7 +257,7 @@
 			"course": "IT スペシャリスト専攻 3 年",
 			"realname": "松本 尚",
 			"nickname": "ひ",
-			"avatar": "/assets/images/profile-b4049.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Web"
@@ -276,7 +276,7 @@
 			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "福壽 卓哉",
 			"nickname": "Chalk",
-			"avatar": "/assets/images/profile-b3132.jpg",
+			"avatarExt": "jpg",
 			"interests": [
 				{
 					"term": "Web Front-end"

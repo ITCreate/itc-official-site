@@ -116,8 +116,8 @@
 					<li class="card-list__item">
 						<p class="position"><%- profile.position %></p>
 						<p class="avatar">
-							<% if (profile.avatar) { %>
-								<img src="<%= profile.avatar %>" alt="" class="avatar__img">
+							<% if (profile.avatarExt) { %>
+								<img src="/assets/images/profile-<%= profile.id %>.<%= profile.avatarExt %>" alt="" class="avatar__img">
 							<% } else { %>
 								<img src="/assets/images/profile-empty.png" alt="" class="avatar__img">
 							<% } %>

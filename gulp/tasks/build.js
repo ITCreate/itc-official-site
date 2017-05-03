@@ -4,7 +4,7 @@ var runSequence = require('run-sequence');
 var build = function(done) {
 	return runSequence(
 		'clean',
-		['html', 'css', 'minify-image', 'copy'],
+		['html', 'css', 'script', 'minify-image', 'copy'],
 		done
 	);
 };

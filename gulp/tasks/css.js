@@ -3,7 +3,7 @@ var config = require('../config');
 var $ = require('gulp-load-plugins')();
 
 var css = function() {
-	return gulp.src(config.src + '/scss/**/*.scss')
+	return gulp.src(config.src + '/scss/style.scss')
 		.pipe($.plumber({
 			errorHandler: $.notify.onError("Error: <%= error.message %>"),
 		}))

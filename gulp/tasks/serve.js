@@ -5,7 +5,6 @@ var $ = require('gulp-load-plugins')();
 var serve = function() {
 	return config.browserSync.init({
 		server: config.dest,
-		browser: "google chrome",
 	});
 };
 

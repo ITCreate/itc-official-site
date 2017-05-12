@@ -152,11 +152,12 @@
 						<p class="course"><%- profile.course %></p>
 						<% if (profile.interests) { %>
 							<div class="interest">
-								<ul class="interest-list">
+								<dl class="interest-list">
+									<dt class="sr-only">関心事</dt>
 									<% profile.interests.forEach(function(interest) { %>
-										<li class="interest-list__item"><%- interest.term %></li>
+										<dd class="interest-list__item"><%- interest.term %></dd>
 									<% }) %>
-								</ul>
+								</dl>
 							</div>
 						<% } %>
 						<% if (profile.sns) { %>

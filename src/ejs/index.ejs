@@ -1,4 +1,4 @@
-<% var profiles = profiles; %>
+<% var profiles = profiles; -%>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -133,7 +133,7 @@
 			<ul class="card-list">
 				<% profiles.forEach(function(profile) { %>
 					<li class="card-list__item">
-						<p class="position"><%- profile.position %></p>
+						<p class="position"><%= profile.position %></p>
 						<p class="avatar">
 							<% if (profile.avatarExt) { %>
 								<picture>
@@ -147,15 +147,15 @@
 								</picture>
 							<% } %>
 						</p>
-						<p class="realname"><%- profile.realname %></p>
-						<p class="nickname"><%- profile.nickname %></p>
-						<p class="course"><%- profile.course %></p>
+						<p class="realname"><%= profile.realname %></p>
+						<p class="nickname"><%= profile.nickname %></p>
+						<p class="course"><%= profile.course %></p>
 						<% if (profile.interests) { %>
 							<div class="interest">
 								<dl class="interest-list">
 									<dt class="sr-only">関心事</dt>
 									<% profile.interests.forEach(function(interest) { %>
-										<dd class="interest-list__item"><%- interest.term %></dd>
+										<dd class="interest-list__item"><%= interest.term %></dd>
 									<% }) %>
 								</dl>
 							</div>
@@ -234,8 +234,8 @@
 				<% profiles.forEach(function(profile, i) { %>
 					{
 						"@type": "Person",
-						"name": "<%- profile.realname %>",
-						"alternateName": "<%- profile.nickname %>",
+						"name": "<%= profile.realname %>",
+						"alternateName": "<%= profile.nickname %>",
 						"image": "<% if (profile.avatarExt) { %>/assets/images/avatar-<%= profile.id %>.<%= profile.avatarExt %><% } else { %>/assets/images/avatar-empty.png<% } %>",
 						<% if (profile.sns) { %>
 							"contactPoint": [
@@ -262,7 +262,7 @@
 								<% } %>
 							],
 						<% } %>
-						"description": "専攻: <%- profile.course %>、<% if (profile.interests) { %>関心事: <% profile.interests.forEach(function(interest, i) { %><%- interest.term %><% if (i < profile.interests.length - 1) { %>・<% } %><% }) %><% } %>"
+						"description": "専攻: <%= profile.course %>、<% if (profile.interests) { %>関心事: <% profile.interests.forEach(function(interest, i) { %><%= interest.term %><% if (i < profile.interests.length - 1) { %>・<% } %><% }) %><% } %>"
 					<% if (i < profiles.length - 1) { %>},<% } else { %>}<% } %>
 				<% }) %>
 			],

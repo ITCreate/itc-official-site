@@ -200,15 +200,152 @@
 		<h2 class="sr-only">関連リンク</h2>
 		<div class="footer__sns">
 			<ul class="sns-list">
-					<li class="sns-list__item">
-						<a href="https://github.com/ITCreate/" target="_blank" class="icon icon--github">
-							<i class="fa fa-github"></i>
-							<span class="sr-only">GitHub</span>
-						</a>
-					</li>
+				<li class="sns-list__item">
+					<a href="https://github.com/ITCreate/" target="_blank" class="icon icon--github">
+						<i class="fa fa-github"></i>
+						<span class="sr-only">GitHub</span>
+					</a>
+				</li>
 			</ul>
 		</div>
 	</footer><!-- .footer -->
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "CollegeOrUniversity",
+		"name": "大阪情報コンピュータ専門学校",
+		"telephone": "06-6772-2233",
+		"faxNumber": "06-6772-1272",
+		"email": "info@oic.ac.jp",
+		"address": {
+			"@type": "PostalAddress",
+			"addressCountry": "日本",
+			"postalCode": "543-0001",
+			"addressRegion": "大阪府大阪市天王寺区",
+			"streetAddress": "上本町6-8-4"
+		},
+		"member": {
+			"@type": "EducationalOrganization",
+			"name": "ITCreate部",
+			"logo": "/assets/images/itc-logo.png",
+			"url": "https://itc.moe",
+			"member": [
+				<% profiles.forEach(function(profile, i) { %>
+					{
+						"@type": "Person",
+						"name": "<%- profile.realname %>",
+						"alternateName": "<%- profile.nickname %>",
+						"image": "<% if (profile.avatarExt) { %>/assets/images/avatar-<%= profile.id %>.<%= profile.avatarExt %><% } else { %>/assets/images/avatar-empty.png<% } %>",
+						<% if (profile.sns) { %>
+							"contactPoint": [
+								<% if (profile.sns.twitter) { %>
+									{
+										"name": "Twitter",
+										"contactType": "sales",
+										"url": "<%- profile.sns.twitter %>"
+									<% if (profile.sns.facebook || profile.sns.github) { %>},<% } else { %>}<% } %>
+								<% } %>
+								<% if (profile.sns.facebook) { %>
+									{
+										"name": "Facebook",
+										"contactType": "sales",
+										"url": "<%- profile.sns.facebook %>"
+									<% if (profile.sns.github) { %>},<% } else { %>}<% } %>
+								<% } %>
+								<% if (profile.sns.github) { %>
+									{
+										"name": "GitHub",
+										"contactType": "sales",
+										"url": "<%- profile.sns.github %>"
+									}
+								<% } %>
+							],
+						<% } %>
+						"description": "専攻: <%- profile.course %>、<% if (profile.interests) { %>関心事: <% profile.interests.forEach(function(interest, i) { %><%- interest.term %><% if (i < profile.interests.length - 1) { %>・<% } %><% }) %><% } %>"
+					<% if (i < profiles.length - 1) { %>},<% } else { %>}<% } %>
+				<% }) %>
+			],
+			"event": [
+				{
+					"@type": "EducationEvent",
+					"name": "勉強会",
+					"description": "GitHub や C 言語など IT 分野をメインに学内で勉強会を開催しています。部員がメンターとして参加することで新たなる技術を学ぶきっかけにもなります。",
+					"location": {
+						"@type": "PostalAddress",
+						"addressCountry": {
+							"@type": "Country",
+							"name": "日本"
+						},
+						"postalCode": "543-0001",
+						"addressRegion": "大阪府大阪市天王寺区",
+						"streetAddress": "上本町6-8-4"
+					}
+				},
+				{
+					"@type": "EducationEvent",
+					"name": "合宿",
+					"description": "2 泊 3 日、ネットワークの構築、BBQ 、LT 大会、24 時間ハッカソンと 3 日間ともに過ごし交流を深める ITCreate 部のメインイベントです。",
+					"location": {
+						"@type": "PostalAddress",
+						"addressCountry": {
+							"@type": "Country",
+							"name": "日本"
+						},
+						"postalCode": "599-0232",
+						"addressRegion": "箱作2825－2",
+						"streetAddress": "大阪府阪南市"
+					}
+				},
+				{
+					"@type": "EducationEvent",
+					"name": "メディアフロンティア",
+					"description": "2 月に OIC で開催される学生作品展です。第 15 回より教室を 1 つお借りして ITC ブースを出しております。業界の方々や一般の方に見ていただける 1 年の集大成となるイベントです。",
+					"location": {
+						"@type": "PostalAddress",
+						"addressCountry": {
+							"@type": "Country",
+							"name": "日本"
+						},
+						"postalCode": "543-0001",
+						"addressRegion": "大阪府大阪市天王寺区",
+						"streetAddress": "上本町6-8-4"
+					}
+				},
+				{
+					"@type": "EducationEvent",
+					"name": "報告会",
+					"description": "毎月、月初めに先月やったこと、今月やりたいことを報告する場を設けております。新しい技術を知るきっかけにもなります。報告会を通して新たなアイデアや作品を生んでいきたいと思っています。",
+					"location": {
+						"@type": "PostalAddress",
+						"addressCountry": {
+							"@type": "Country",
+							"name": "日本"
+						},
+						"postalCode": "543-0001",
+						"addressRegion": "大阪府大阪市天王寺区",
+						"streetAddress": "上本町6-8-4"
+					}
+				},
+				{
+					"@type": "EducationEvent",
+					"name": "学生スタッフ",
+					"description": "カンファレンスなどに学生スタッフとして参加し、現場のエンジニア達と一緒にイベント運営をすることで、現場の技術や雰囲気を学んでいます。",
+					"location": {
+						"@type": "PostalAddress",
+						"addressCountry": {
+							"@type": "Country",
+							"name": "日本"
+						},
+						"postalCode": "543-0001",
+						"addressRegion": "大阪府大阪市天王寺区",
+						"streetAddress": "上本町6-8-4"
+					}
+				}
+			]
+		}
+	}
+	</script>
 
 </body>
 

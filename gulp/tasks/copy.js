@@ -8,7 +8,7 @@ var copy = function() {
 		gulp.src(require('node-font-awesome').fonts)
 			.pipe(gulp.dest(config.dest + '/assets/fonts'))
 		.on('end', function() {
-			gulp.src(config.src + '/favicon.ico')
+			gulp.src([config.src + '/favicon.ico', config.src + '/webclip.png'])
 				.pipe(gulp.dest(config.dest));
 		});
 	});

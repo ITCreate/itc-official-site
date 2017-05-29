@@ -297,29 +297,5 @@
 				"twitter": "https://twitter.com/h_m_19960126"
 			}
 		}
-		// {
-		// 	"id": "b3132",
-		// 	"position": "OB",
-		// 	"course": "IT スペシャリスト専攻 4 年",
-		// 	"realname": "福壽 卓哉",
-		// 	"nickname": "Chalk",
-		// 	"avatarExt": "jpg",
-		// 	"interests": [
-		// 		{
-		// 			"term": "Web Front-end"
-		// 		},
-		// 		{
-		// 			"term": "Web Design"
-		// 		},
-		// 		{
-		// 			"term": "Media Art"
-		// 		}
-		// 	],
-		// 	"sns": {
-		// 		"twitter": "https://twitter.com/chalkygames123",
-		// 		"facebook": "https://www.facebook.com/chalkygames123",
-		// 		"github": "https://github.com/chalkygames123"
-		// 	}
-		// }
 	]
 }

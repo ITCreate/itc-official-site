@@ -1,9 +1,167 @@
 {
 	"profiles": [
 		{
-			"id": "b4079",
+			"id": "b5331",
 			"position": "部長",
+			"course": "システムエンジニアコース専攻 3 年",
+			"realname": "古賀 友輝",
+			"nickname": "がっちゃん",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "Web Front-end"
+				},
+				{
+					"term": "Java"
+				},
+				{
+					"term": "Ubuntu"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/ahaha0807_alg",
+				"facebook": "https://www.facebook.com/ahaha0807.alg",
+				"github": "https://github.com/ahaha0807"
+			}
+		},
+		{
+			"id": "empty",
+			"position": "部長",
+			"course": "ネットワークセキュリティ専攻 3 年",
+			"realname": "青木 裕介",
+			"nickname": "UNILORN",
+			"interests": [
+				{
+					"term": "PHP"
+				},
+				{
+					"term": "Python"
+				},
+				{
+					"term": "RaspberryPI"
+				}
+			],
+			"sns": {
+				"github": "https://github.com/UNILORN/"
+			}
+		},
+		{
+			"id": "b6232",
+			"position": "副部長",
+			"course": "IT スペシャリスト専攻 2 年",
+			"realname": "伯 健弘",
+			"nickname": "Hack-Man",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "Front-end"
+				},
+				{
+					"term": "Elixir"
+				},
+				{
+					"term": "Unity"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/mogus_workshop",
+				"facebook": "https://www.facebook.com/mogus.workshop",
+				"github": "https://github.com/mogumannto"
+			}
+		},
+		{
+			"id": "empty",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 2 年",
+			"realname": "竹川 翔悟",
+			"nickname": "そぉい。",
+			"interests": [
+				{
+					"term": "Programming"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/tttyya"
+			}
+		},
+		{
+			"id": "b6123",
+			"position": "部員",
+			"course": "ゲームデザイナー専攻 2 年",
+			"realname": "嶋田 一輝",
+			"nickname": "嶋ちゃん",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "HTML"
+				},
+				{
+					"term": "Unreal Engine 4"
+				},
+				{
+					"term": "Unity"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/oekaki_pin"
+			}
+		},
+		{
+			"id": "b6099",
+			"position": "部員",
+			"course": "ネットワークセキュリティ専攻 2 年",
+			"realname": "甲村 迅",
+			"nickname": "Vys",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "Network"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/Ortsyb",
+				"facebook": "https://www.facebook.com/ortsyb",
+				"github": "https://github.com/Ortsyb"
+			}
+		},
+		{
+			"id": "b5205",
+			"position": "部員",
 			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "日下部 拓人",
+			"nickname": "marimo",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "Ruby"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/hanaitimonme46",
+				"facebook": "https://www.facebook.com/takuto.kusakabe",
+				"github": "https://github.com/t-kusakabe"
+			}
+		},
+		{
+			"id": "b5005",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 3 年",
+			"realname": "宮前 椋平",
+			"nickname": "ema",
+			"avatarExt": "png",
+			"interests": [
+				{
+					"term": "JavaScript"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/emayami_r"
+			}
+		},
+		{
+			"id": "b4079",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "山崎 好洋",
 			"nickname": "44",
 			"avatarExt": "jpg",
@@ -26,8 +184,8 @@
 		},
 		{
 			"id": "b4097",
-			"position": "副部長",
-			"course": "IT スペシャリスト専攻 3 年",
+			"position": "部員",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "渕田 恭秀",
 			"nickname": "ふっちー",
 			"avatarExt": "jpg",
@@ -42,140 +200,9 @@
 			}
 		},
 		{
-			"id": "b6232",
-			"position": "部員",
-			"course": "ゲームプログラマー専攻 1 年",
-			"realname": "伯 健弘",
-			"nickname": "もぐぅ",
-			"avatarExt": "jpg",
-			"interests": [
-				{
-					"term": "Unity"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/mogus_workshop",
-				"facebook": "https://www.facebook.com/mogus.workshop",
-				"github": "https://github.com/mogumannto"
-			}
-		},
-		{
 			"id": "empty",
 			"position": "部員",
-			"course": "IT スペシャリスト専攻 1 年",
-			"realname": "竹川 翔悟",
-			"nickname": "そぉい。",
-			"interests": [
-				{
-					"term": "Programming"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/tttyya"
-			}
-		},
-		{
-			"id": "b6123",
-			"position": "部員",
-			"course": "ゲームデザイナー専攻 1 年",
-			"realname": "嶋田 一輝",
-			"nickname": "嶋ちゃん",
-			"avatarExt": "jpg",
-			"interests": [
-				{
-					"term": "HTML"
-				},
-				{
-					"term": "Unreal Engine 4"
-				},
-				{
-					"term": "Unity"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/oekaki_pin"
-			}
-		},
-		{
-			"id": "b6099",
-			"position": "部員",
-			"course": "ネットワークセキュリティ専攻 1 年",
-			"realname": "甲村 迅",
-			"nickname": "Vys",
-			"avatarExt": "jpg",
-			"interests": [
-				{
-					"term": "Network"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/Ortsyb",
-				"facebook": "https://www.facebook.com/ortsyb",
-				"github": "https://github.com/Ortsyb"
-			}
-		},
-		{
-			"id": "b5331",
-			"position": "部員",
-			"course": "システムエンジニアコース専攻 2 年",
-			"realname": "古賀 友輝",
-			"nickname": "がっちゃん",
-			"avatarExt": "jpg",
-			"interests": [
-				{
-					"term": "Web Front-end"
-				},
-				{
-					"term": "Java"
-				},
-				{
-					"term": "Ubuntu"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/ahaha0807_alg",
-				"facebook": "https://www.facebook.com/ahaha0807.alg",
-				"github": "https://github.com/ahaha0807"
-			}
-		},
-		{
-			"id": "b5205",
-			"position": "部員",
-			"course": "IT スペシャリスト専攻 2 年",
-			"realname": "日下部 拓人",
-			"nickname": "marimo",
-			"avatarExt": "jpg",
-			"interests": [
-				{
-					"term": "Ruby"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/hanaitimonme46",
-				"facebook": "https://www.facebook.com/takuto.kusakabe",
-				"github": "https://github.com/t-kusakabe"
-			}
-		},
-		{
-			"id": "b5005",
-			"position": "部員",
-			"course": "IT スペシャリスト専攻 2 年",
-			"realname": "宮前 椋平",
-			"nickname": "ema",
-			"avatarExt": "png",
-			"interests": [
-				{
-					"term": "JavaScript"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/emayami_r"
-			}
-		},
-		{
-			"id": "empty",
-			"position": "部員",
-			"course": "IT スペシャリスト専攻 3 年",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "川村 結李",
 			"nickname": "-",
 			"interests": [
@@ -187,7 +214,7 @@
 		{
 			"id": "b4097",
 			"position": "部員",
-			"course": "IT スペシャリスト専攻 3 年",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "-",
 			"nickname": "ぐっち",
 			"interests": [
@@ -202,7 +229,7 @@
 		{
 			"id": "b4183",
 			"position": "部員",
-			"course": "IT スペシャリスト専攻 3 年",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "山腰 知典",
 			"nickname": "やまごん",
 			"avatarExt": "jpg",
@@ -226,7 +253,7 @@
 		{
 			"id": "empty",
 			"position": "部員",
-			"course": "IT スペシャリスト専攻 3 年",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "山口 秀康",
 			"nickname": "hide",
 			"sns": {
@@ -236,7 +263,7 @@
 		{
 			"id": "empty",
 			"position": "部員",
-			"course": "IT スペシャリスト専攻 3 年",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "下西 里奈",
 			"nickname": "さとな助",
 			"interests": [
@@ -254,7 +281,7 @@
 		{
 			"id": "b4049",
 			"position": "部員",
-			"course": "IT スペシャリスト専攻 3 年",
+			"course": "IT スペシャリスト専攻 4 年",
 			"realname": "松本 尚",
 			"nickname": "ひ",
 			"avatarExt": "jpg",
@@ -269,30 +296,30 @@
 			"sns": {
 				"twitter": "https://twitter.com/h_m_19960126"
 			}
-		},
-		{
-			"id": "b3132",
-			"position": "部員",
-			"course": "IT スペシャリスト専攻 4 年",
-			"realname": "福壽 卓哉",
-			"nickname": "Chalk",
-			"avatarExt": "jpg",
-			"interests": [
-				{
-					"term": "Web Front-end"
-				},
-				{
-					"term": "Web Design"
-				},
-				{
-					"term": "Media Art"
-				}
-			],
-			"sns": {
-				"twitter": "https://twitter.com/chalkygames123",
-				"facebook": "https://www.facebook.com/chalkygames123",
-				"github": "https://github.com/chalkygames123"
-			}
 		}
+		// {
+		// 	"id": "b3132",
+		// 	"position": "OB",
+		// 	"course": "IT スペシャリスト専攻 4 年",
+		// 	"realname": "福壽 卓哉",
+		// 	"nickname": "Chalk",
+		// 	"avatarExt": "jpg",
+		// 	"interests": [
+		// 		{
+		// 			"term": "Web Front-end"
+		// 		},
+		// 		{
+		// 			"term": "Web Design"
+		// 		},
+		// 		{
+		// 			"term": "Media Art"
+		// 		}
+		// 	],
+		// 	"sns": {
+		// 		"twitter": "https://twitter.com/chalkygames123",
+		// 		"facebook": "https://www.facebook.com/chalkygames123",
+		// 		"github": "https://github.com/chalkygames123"
+		// 	}
+		// }
 	]
 }

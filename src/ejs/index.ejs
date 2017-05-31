@@ -188,6 +188,14 @@
 											</a>
 										</li>
 									<% } %>
+									<% if (profile.sns.qiita) { %>
+										<li class="sns-list__item">
+											<a href="<%- profile.sns.qiita %>" target="_blank" rel="noopener" class="icon icon--qiita">
+												<i class="???"></i>
+												<span class="sr-only">GitHub</span>
+											</a>
+										</li>
+									<% } %>
 								</ul><!-- .sns-list -->
 							</div><!-- .sns -->
 						<% } %>

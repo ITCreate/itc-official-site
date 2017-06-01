@@ -21,7 +21,8 @@
 			"sns": {
 				"twitter": "https://twitter.com/ahaha0807_alg",
 				"facebook": "https://www.facebook.com/ahaha0807.alg",
-				"github": "https://github.com/ahaha0807"
+				"github": "https://github.com/ahaha0807",
+				"qiita": "http://qiita.com/ahaha0807_alg"
 			}
 		},
 		{
@@ -239,19 +240,20 @@
 			"avatarExt": "jpg",
 			"interests": [
 				{
+					"term": "Web"
+				},
+				{
+					"term": "Laravel"
+				},
+				{
 					"term": "Selenium"
-				},
-				{
-					"term": "JavaScript"
-				},
-				{
-					"term": "Python"
 				}
 			],
 			"sns": {
 				"twitter": "https://twitter.com/ymgn_ll",
 				"facebook": "https://www.facebook.com/profile.php?id=100010162450532",
-				"github": "https://github.com/ymgn"
+				"github": "https://github.com/ymgn",
+				"qiita": "http://qiita.com/ymgn_ll"
 			}
 		},
 		{

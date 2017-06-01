@@ -403,6 +403,7 @@ a {
 
 				&__item {
 					margin: 5px;
+					transition: all 0.6s ease;
 
 					.icon {
 						display: flex;
@@ -428,6 +429,10 @@ a {
 						&--qiita {
 							background-color: #4cb10d;
 						}
+					}
+
+					&:hover {
+						transform: scale(1.43);
 					}
 				}
 			}

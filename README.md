@@ -1,7 +1,6 @@
 ```
 bower install
-npm install
-npm run build
-npm start
+yarn
+yarn run build
+yarn start
 ```
-

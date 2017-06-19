@@ -34,6 +34,7 @@ body {
 	text-rendering: optimizeLegibility;
 	font-family: "源ノ角ゴシック JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
+
 a {
 	cursor: auto;
 }
@@ -403,7 +404,6 @@ a {
 
 				&__item {
 					margin: 5px;
-					transition: all 0.6s ease;
 
 					.icon {
 						display: flex;
@@ -414,6 +414,7 @@ a {
 						border-radius: 50%;
 						text-decoration: none;
 						color: #fff;
+						transition: transform 0.6s ease;
 
 						&--twitter {
 							background-color: #1da1f2;
@@ -426,27 +427,29 @@ a {
 						&--github {
 							background-color: #999999;
 						}
+
 						&--qiita {
 							background-color: #4cb10d;
-						}
-					}
 
-					&:hover {
-						transform: scale(1.43);
+							.fa-stack{
+								width: 1em;
+								height: 1em;
+								line-height: 1em;
+							}
+
+							.fa-2x{
+								font-size: 0.8em;
+							}
+						}
+
+						&:hover {
+							transform: scale(1.43);
+						}
 					}
 				}
 			}
 		}
 	}
-}
-
-.fa-stack{
-	width: 1em;
-	height: 1em;
-	line-height: 1em;
-}
-.fa-2x{
-	font-size: 0.8em;
 }
 
 .footer {

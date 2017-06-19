@@ -21,10 +21,7 @@ var css = function() {
 				suffix: '.min',
 				extname: '.css',
 			}))
-		.pipe($.sourcemaps.write('.', {
-			includeContent: false,
-			sourceRoot: config.src + '/scss',
-		}))
+		.pipe($.sourcemaps.write('maps'))
 		.pipe(gulp.dest(config.dest + '/assets/css'))
 		.pipe(config.browserSync.stream({match: config.dest + '/assets/css/**/*.css'}));
 };

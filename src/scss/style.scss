@@ -3,12 +3,7 @@
 @import "bourbon";
 @import "font-awesome";
 
-@font-face {
-	font-family: "源ノ角ゴシック JP";
-	font-weight: normal;
-	font-style: normal;
-	src: local("源ノ角ゴシック JP Regular"), local("SourceHanSansJP-Regular"), url("/assets/fonts/SourceHanSansJP-Regular.woff2") format("woff2");
-}
+@import url("//fonts.googleapis.com/earlyaccess/notosansjp.css");
 
 @font-face {
 	font-family: "源柔ゴシックP";
@@ -32,7 +27,9 @@
 body {
 	color: #333;
 	text-rendering: optimizeLegibility;
-	font-family: "源ノ角ゴシック JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-feature-settings: "palt";
+	letter-spacing: 1px;
 }
 
 a {
@@ -129,7 +126,6 @@ a {
 			margin-bottom: 0;
 			font-size: 16px;
 			line-height: 27px;
-			letter-spacing: 0.2px;
 
 			@media screen and (min-width: 480px) {
 				font-size: 20px;
@@ -254,7 +250,6 @@ a {
 			margin-bottom: 0;
 			font-size: 16px;
 			line-height: 24px;
-			letter-spacing: 0.2px;
 
 			@media screen and (min-width: 480px) {
 				font-size: 18px;

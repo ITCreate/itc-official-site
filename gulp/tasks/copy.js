@@ -9,7 +9,11 @@ var copy = function() {
 			.pipe(gulp.dest(config.dest + '/assets/fonts'))
 		.on('end', function() {
 			gulp.src([config.src + '/favicon.ico', config.src + '/webclip.png'])
-				.pipe(gulp.dest(config.dest));
+				.pipe(gulp.dest(config.dest))
+			.on('end', function() {
+				gulp.src(config.root + "/node_modules/ress/dist/ress.min.css")
+					.pipe(gulp.dest(config.dest + "/assets/css/vendor"));
+			});
 		});
 	});
 };

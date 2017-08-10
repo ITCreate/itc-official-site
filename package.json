@@ -1,8 +1,5 @@
 {
-  "name": "itc-official-site",
-  "version": "1.0.0",
   "description": "The official site of the ITCreate Club.",
-  "main": "index.js",
   "scripts": {
     "start": "gulp default",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,7 +17,7 @@
     "url": "git+https://github.com/ITCreate/itc-official-site.git"
   },
   "author": "Takuya Fukuju <chalkygames123@icloud.com>",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/ITCreate/itc-official-site/issues"
   },

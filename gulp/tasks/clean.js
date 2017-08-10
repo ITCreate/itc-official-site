@@ -8,7 +8,6 @@ var clean = function() {
 		config.dest + '/**/*',
 		'!' + config.dest + '/**/.gitkeep',
 		'!' + config.dest + '/assets{,/**/.gitkeep}',
-		'!' + config.dest + '/assets/bower_components{,/**/*}',
 	], {
 		dot: true,
 	});

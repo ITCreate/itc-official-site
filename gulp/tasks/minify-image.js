@@ -5,37 +5,46 @@ var imageminPngquant = require('imagemin-pngquant');
 var imageminWebp = require('imagemin-webp');
 
 var minifyImage = function() {
-	return gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/avatar-*.{gif,jpg,png}'])
-		.pipe($.imageResize({
-			width: 800,
-		}))
-		.pipe(gulp.dest(config.dest + '/assets/images'))
-	.on('end', function() {
-		gulp.src(config.src + '/images/**/avatar-*.{gif,jpg,png}')
-			.pipe($.imageResize({
-				width: 160,
-				height: 160,
-				crop: true,
-			}))
-			.pipe(gulp.dest(config.dest + '/assets/images'))
-		.on('end', function() {
-			gulp.src(config.dest + '/assets/images/**/*.{gif,jpg,png,svg}')
-				.pipe($.imagemin([
-					$.imagemin.gifsicle({
-						optimizationLevel: 3,
-					}),
-					imageminPngquant({
-						quality: '70-80',
-						speed: 1,
-					}),
-					$.imagemin.jpegtran({
-						progressive: true,
-					}),
-					$.imagemin.svgo(),
-				]))
-				.pipe(gulp.dest(config.dest + '/assets/images'))
-			.on('end', function() {
-				gulp.src(config.dest + '/assets/images/**/*.{jpg,png}')
+	return Promise.resolve()
+		.then(function() {
+			return new Promise(function(resolve) {
+				gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/avatar-*.{gif,jpg,png}'])
+					.pipe($.imageResize({
+						width: 800,
+					}))
+					.pipe(gulp.dest(config.dest + '/assets/images'))
+					.on('end', resolve);
+			});
+		})
+		.then(function() {
+			return new Promise(function(resolve) {
+				gulp.src(config.src + '/images/**/avatar-*.{gif,jpg,png}')
+					.pipe($.imageResize({
+						width: 160,
+						height: 160,
+						crop: true,
+					}))
+					.pipe(gulp.dest(config.dest + '/assets/images'))
+					.on('end', resolve);
+			});
+		})
+		.then(function() {
+			return new Promise(function(resolve) {
+				gulp.src(config.dest + '/assets/images/**/*.{gif,jpg,png,svg}')
+					.pipe($.imagemin([
+						$.imagemin.gifsicle({
+							optimizationLevel: 3,
+						}),
+						imageminPngquant({
+							quality: '70-80',
+							speed: 1,
+						}),
+						$.imagemin.jpegtran({
+							progressive: true,
+						}),
+						$.imagemin.svgo(),
+					]))
+					.pipe(gulp.dest(config.dest + '/assets/images'))
 					.pipe($.imagemin([
 						imageminWebp({
 							method: 6,
@@ -45,10 +54,10 @@ var minifyImage = function() {
 						extname: '.webp',
 					}))
 					.pipe(gulp.dest(config.dest + '/assets/images'))
-					.pipe(config.browserSync.stream());
+					.pipe(config.browserSync.stream())
+					.on('end', resolve);
 			});
 		});
-	});
 };
 
 gulp.task('minify-image', minifyImage);

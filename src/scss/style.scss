@@ -51,6 +51,7 @@ body {
 	text-rendering: optimizeLegibility;
 	font-family: $font-family;
 	font-feature-settings: "palt" 1;
+	font-display: swap;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	letter-spacing: 1px;

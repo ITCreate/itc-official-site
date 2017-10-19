@@ -4,7 +4,7 @@ var config = require('../config');
 var copy = function() {
 	return Promise.all([
 		new Promise(function(resolve) {
-			gulp.src(config.src + '/fonts/**/*.woff2')
+			gulp.src(config.src + '/fonts/**/*.{woff2,woff,otf,ttf}')
 				.pipe(gulp.dest(config.dest + '/assets/fonts'))
 				.on('end', resolve);
 		}),

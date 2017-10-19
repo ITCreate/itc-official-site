@@ -1,5 +1,5 @@
 ```
-yarn
-yarn run build
-yarn start
+$ yarn
+$ yarn build
+$ yarn start
 ```

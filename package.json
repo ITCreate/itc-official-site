@@ -25,6 +25,8 @@
   "devDependencies": {
     "browser-sync": "^2.17.5",
     "del": "^3.0.0",
+    "eslint": "^4.9.0",
+    "eslint-config-eslint": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-ejs": "^3.0.1",
     "gulp-image-resize": "^0.12.0",

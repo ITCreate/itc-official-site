@@ -8,9 +8,9 @@ var minifyImage = function() {
 	return Promise.resolve()
 		.then(function() {
 			return new Promise(function(resolve) {
-				gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/avatar-*.{gif,jpg,png}'])
+				gulp.src(config.src + '/images/**/*')
 					.pipe($.imageResize({
-						width: 800,
+						width: 1280,
 					}))
 					.pipe(gulp.dest(config.dest + '/assets/images'))
 					.on('end', resolve);
@@ -36,7 +36,7 @@ var minifyImage = function() {
 							optimizationLevel: 3,
 						}),
 						imageminPngquant({
-							quality: '70-80',
+							quality: '80-90',
 							speed: 1,
 						}),
 						$.imagemin.jpegtran({
@@ -47,6 +47,7 @@ var minifyImage = function() {
 					.pipe(gulp.dest(config.dest + '/assets/images'))
 					.pipe($.imagemin([
 						imageminWebp({
+							quality: '90',
 							method: 6,
 						}),
 					]))

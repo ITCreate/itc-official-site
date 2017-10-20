@@ -68,6 +68,10 @@ a {
 	padding: 78px 15%;
 	background: url("/assets/images/mv-bg01.jpg") no-repeat center / cover;
 
+	.webp & {
+		background-image: url("/assets/images/mv-bg01.webp");
+	}
+
 	@media screen and (min-width: 480px) {
 		min-height: 420px;
 	}

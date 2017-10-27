@@ -35,7 +35,9 @@ var minifyImage = function() {
 		})
 		.then(function() {
 			return new Promise(function(resolve) {
-				gulp.src(config.dest + '/assets/images/**/*.{gif,jpg,png,svg}')
+					remoteSrc(config.images,{
+						base: config.remote_src
+					})
 					.pipe($.imagemin([
 						$.imagemin.gifsicle({
 							optimizationLevel: 3,

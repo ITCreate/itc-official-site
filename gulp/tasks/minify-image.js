@@ -3,12 +3,15 @@ var config = require('../config');
 var $ = require('gulp-load-plugins')();
 var imageminPngquant = require('imagemin-pngquant');
 var imageminWebp = require('imagemin-webp');
+var remoteSrc = require('gulp-remote-src');
 
 var minifyImage = function() {
 	return Promise.resolve()
 		.then(function() {
 			return new Promise(function(resolve) {
-				gulp.src([config.src + '/images/**/*', '!' + config.src + '/images/**/avatar-*.{gif,jpg,png}'])
+				remoteSrc(config.images,{
+					base: config.remote_src
+				})
 					.pipe($.imageResize({
 						width: 800,
 					}))
@@ -18,7 +21,9 @@ var minifyImage = function() {
 		})
 		.then(function() {
 			return new Promise(function(resolve) {
-				gulp.src(config.src + '/images/**/avatar-*.{gif,jpg,png}')
+				remoteSrc(config.images_avatar,{
+					base: config.remote_src
+				})
 					.pipe($.imageResize({
 						width: 160,
 						height: 160,

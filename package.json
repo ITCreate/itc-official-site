@@ -45,6 +45,8 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "ress": "^1.2.2"
+    "gulp-remote-src": "^0.4.3",
+    "ress": "^1.2.2",
+    "yarn": "^1.2.1"
   }
 }

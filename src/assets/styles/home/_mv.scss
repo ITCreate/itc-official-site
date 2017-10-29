@@ -1,0 +1,55 @@
+.mv {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: 320px;
+	background: url('/assets/images/mv_bg01.jpg') no-repeat center / cover;
+
+	@include media-breakpoint-up(sm) {
+		min-height: 420px;
+	}
+
+	@include media-breakpoint-up(md) {
+		min-height: 615px;
+	}
+
+	.webp & {
+		background-image: url('/assets/images/mv_bg01.webp');
+	}
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, .8));
+	}
+
+	&__logo-link {
+		display: block;
+		padding: 12px 10px;
+	}
+
+	&__motto {
+		@include heading-font();
+
+		align-self: center;
+		padding-left: 30px;
+		color: #fff;
+		text-shadow: 0 0 6px hsla(0, 0%, 0%, .3);
+		font-size: 24px;
+		line-height: 36px;
+
+		@include media-breakpoint-up(sm) {
+			padding-left: 60px;
+			font-size: 30px;
+			line-height: 45px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-left: 160px;
+			font-size: 48px;
+			line-height: 72px;
+		}
+	}
+}

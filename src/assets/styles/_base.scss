@@ -1,0 +1,21 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #333;
+	letter-spacing: 1px;
+	font-family: $font-family;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'palt' 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	vertical-align: middle;
+}
+
+ul {
+	list-style: none;
+}

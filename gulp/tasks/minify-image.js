@@ -36,7 +36,7 @@ var minifyImage = function() {
 		.then(function() {
 			return new Promise(function(resolve) {
 					remoteSrc(config.images,{
-						base: config.remote_src
+						base: [...config.remote_src,...images_avatar]
 					})
 					.pipe($.imagemin([
 						$.imagemin.gifsicle({

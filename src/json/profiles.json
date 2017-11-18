@@ -76,6 +76,23 @@
 			}
 		},
 		{
+			"id": "b7233",
+			"position": "部員",
+			"course": "ネットワークセキュリティ専攻 １ 年",
+			"realname": "-",
+			"nickname": "かずきち",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "二郎系ラーメン"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/h_tyokinuhata",
+				"github": "https://github.com/tyokinuhata"
+			}
+		},
+		{
 			"id": "empty",
 			"position": "部員",
 			"course": "IT スペシャリスト専攻 2 年",

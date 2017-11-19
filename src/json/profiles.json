@@ -188,6 +188,30 @@
 			}
 		},
 		{
+			"id": "b5096",
+			"position": "部員",
+			"course": "ゲームプログラマー専攻 3 年",
+			"realname": "伊藤 拓",
+			"nickname": "itohii (イトヒー)",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "Webプログラミング"
+				},
+				{
+					"term": "C++"
+				},
+				{
+					"term": "マネジメント"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/itohii0626",
+				"facebook": "https://www.facebook.com/profile.php?id=100014331545687&fref=nf",
+				"github": "https://github.com/itohii"
+			}
+		},
+		{
 			"id": "b5205",
 			"position": "部員",
 			"course": "IT スペシャリスト専攻 3 年",

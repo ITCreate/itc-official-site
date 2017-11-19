@@ -76,6 +76,29 @@
 			}
 		},
 		{
+			"id": "b7080",
+			"position": "部員",
+			"course": "ネットワークセキュリティ専攻 １ 年",
+			"realname": "柿元 俊也",
+			"nickname": "かっきー",
+			"avatarExt": "jpg",
+			"interests": [
+				{
+					"term": "Web"
+				},
+				{
+					"term": "自作PC"
+				},
+				{
+					"term": "バイク"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/kakimotoKAITC",
+				"facebook": "https://facebook.com/KakimotoShunya"
+			}
+		},
+		{
 			"id": "b7233",
 			"position": "部員",
 			"course": "ネットワークセキュリティ専攻 １ 年",

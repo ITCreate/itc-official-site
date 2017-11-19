@@ -116,6 +116,23 @@
 			}
 		},
 		{
+			"id": "b7180",
+			"position": "部員",
+			"course": "ネットワークセキュリティ専攻 １ 年",
+			"realname": "-",
+			"nickname": "たかし",
+			"avatarExt": "png",
+			"interests": [
+				{
+					"term": "メロン"
+				}
+			],
+			"sns": {
+				"twitter": "https://twitter.com/takashioic",
+				"qiita": "https://qiita.com/takashimelon"
+			}
+		},
+		{
 			"id": "empty",
 			"position": "部員",
 			"course": "IT スペシャリスト専攻 2 年",

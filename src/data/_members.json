@@ -75,6 +75,104 @@
 		}
 	},
 	{
+		"id": "b7080",
+		"position": "部員",
+		"course": "ネットワークセキュリティ専攻 １ 年",
+		"realname": "柿元 俊也",
+		"nickname": "かっきー",
+		"avatarExt": "jpg",
+		"interests": [
+			{
+				"term": "Web"
+			},
+			{
+				"term": "自作PC"
+			},
+			{
+				"term": "バイク"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/kakimotoKAITC",
+			"facebook": "https://facebook.com/KakimotoShunya"
+		}
+	},
+	{
+		"id": "b7233",
+		"position": "部員",
+		"course": "ネットワークセキュリティ専攻 １ 年",
+		"realname": "-",
+		"nickname": "かずきち",
+		"avatarExt": "png",
+		"interests": [
+			{
+				"term": "二郎系ラーメン"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/h_tyokinuhata",
+			"github": "https://github.com/tyokinuhata"
+		}
+	},
+	{
+		"id": "b7180",
+		"position": "部員",
+		"course": "ネットワークセキュリティ専攻 １ 年",
+		"realname": "-",
+		"nickname": "たかし",
+		"avatarExt": "png",
+		"interests": [
+			{
+				"term": "メロン"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/takashioic",
+			"qiita": "https://qiita.com/takashimelon"
+		}
+	},
+	{
+		"id": "b7306",
+		"position": "部員",
+		"course": "システムエンジニア専攻 １ 年",
+		"realname": "古谷 颯",
+		"nickname": "-",
+		"avatarExt": "jpg",
+		"interests": [
+			{
+				"term": "アセンブラ"
+			},
+			{
+				"term": "ゲームプログラミング"
+			},
+			{
+				"term": "自作言語"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/elipmoc101"
+		}
+	},
+	{
+		"id": "b7022",
+		"position": "部員",
+		"course": "ITシステムエンジニアコース １ 年",
+		"realname": "泉谷 賢斗",
+		"nickname": "けんちゃん",
+		"avatarExt": "jpg",
+		"interests": [
+			{
+				"term": "Java"
+			},
+			{
+				"term": "人工知能"
+			}
+		],
+		"links": {
+			"twitter": "http://twitter.com/KenAGI_SE"
+		}
+	},
+	{
 		"id": "empty",
 		"position": "部員",
 		"course": "IT スペシャリスト専攻 2 年",
@@ -118,16 +216,16 @@
 		"course": "ネットワークセキュリティ専攻 2 年",
 		"realname": "甲村 迅",
 		"nickname": "Gene",
-		"avatarExt": "png",
+		"avatarExt": "jpg",
 		"interests": [
 			{
 				"term": "Network"
 			}
 		],
 		"links": {
-			"twitter": "https://twitter.com/Divinariuz",
-			"facebook": "https://www.facebook.com/divinariuz",
-			"github": "https://github.com/Divinariuz"
+			"twitter": "https://twitter.com/Jadiunr",
+			"facebook": "https://www.facebook.com/Jadiunr",
+			"github": "https://github.com/Jadiunr"
 		}
 	},
 	{
@@ -144,6 +242,30 @@
 		],
 		"links": {
 			"twitter": "https://twitter.com/Souta_RRRRROW"
+		}
+	},
+	{
+		"id": "b5096",
+		"position": "部員",
+		"course": "ゲームプログラマー専攻 3 年",
+		"realname": "伊藤 拓",
+		"nickname": "itohii (イトヒー)",
+		"avatarExt": "jpg",
+		"interests": [
+			{
+				"term": "Webプログラミング"
+			},
+			{
+				"term": "C++"
+			},
+			{
+				"term": "マネジメント"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/itohii0626",
+			"facebook": "https://www.facebook.com/profile.php?id=100014331545687&fref=nf",
+			"github": "https://github.com/itohii"
 		}
 	},
 	{

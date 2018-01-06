@@ -2,11 +2,11 @@
 	@for $i from 1 through 5 {
 		&--0#{$i} {
 			&::before {
-				background-image: url('/assets/images/sec02_img0#{$i}.jpg');
+				background-image: url('/assets/images/activities_img0#{$i}.jpg');
 			}
 
 			.webp &::before {
-				background-image: url('/assets/images/sec02_img0#{$i}.webp');
+				background-image: url('/assets/images/activities_img0#{$i}.webp');
 			}
 		}
 	}

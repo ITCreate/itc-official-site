@@ -4,10 +4,10 @@
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
-		"start": "NODE_ENV=watch gulp default",
+		"start": "cross-env NODE_ENV=watch gulp default",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "gulp build",
-		"build:production": "NODE_ENV=production gulp build",
+		"build:production": "cross-env NODE_ENV=production gulp build",
 		"clean": "gulp clean",
 		"copy": "gulp copy",
 		"html": "gulp html",
@@ -15,7 +15,7 @@
 		"scripts": "gulp scripts",
 		"serve": "gulp serve",
 		"styles": "gulp styles",
-		"watch": "NODE_ENV=watch gulp watch"
+		"watch": "cross-env NODE_ENV=watch gulp watch"
 	},
 	"dependencies": {
 		"gsap": "^1.20.3",
@@ -29,6 +29,7 @@
 		"babel-loader": "^7.1.2",
 		"babel-preset-env": "^1.6.1",
 		"browser-sync": "^2.17.5",
+		"cross-env": "^5.1.3",
 		"css-mqpacker": "^6.0.1",
 		"del": "^3.0.0",
 		"eslint": "^4.12.1",

@@ -103,6 +103,7 @@ const scripts = {
 
 const serve = {
 	browserSync: {
+		ui: false,
 		server: paths.dest
 	}
 };
@@ -133,7 +134,7 @@ const styles = {
 const copy = {
 	src: {
 		globs: [
-			paths.src + '/**/!(_)**/!(_)*',
+			paths.src + '/**/!(_)*',
 			'!' + html.src.globs,
 			'!' + images.src.globs,
 			'!' + styles.src.globs,

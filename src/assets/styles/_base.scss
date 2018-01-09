@@ -3,13 +3,17 @@ html {
 }
 
 body {
-	color: #333;
 	letter-spacing: 1px;
+	font-size: 1.3rem;
 	font-family: $font-family;
 	text-rendering: optimizeLegibility;
 	font-feature-settings: 'palt' 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	@include media-breakpoint-up(md) {
+		font-size: 1.6rem;
+	}
 }
 
 img {
@@ -18,4 +22,9 @@ img {
 
 ul {
 	list-style: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
 }

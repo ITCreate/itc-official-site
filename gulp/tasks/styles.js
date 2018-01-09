@@ -46,4 +46,4 @@ const styles = () => {
 	.pipe($.if(config.watch, myServer.stream()));
 };
 
-gulp.task('styles', styles);
+gulp.task('styles', ['images'], styles);

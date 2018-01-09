@@ -124,7 +124,9 @@ const styles = {
 		outputStyle: `expanded`
 	},
 	postcss: {
-		postcssAssets: null
+		postcssAssets: {
+			basePath: paths.dest
+		}
 	}
 };
 

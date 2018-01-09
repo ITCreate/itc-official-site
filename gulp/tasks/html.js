@@ -7,6 +7,7 @@ const myServer = require('../global').myServer;
 
 const html = () => {
 	return gulp.src(config.html.src.globs, config.html.src.options)
+	.pipe($.filter(config.html.filter.pattern))
 	.pipe($.if(config.watch, $.plumber({
 		errorHandler: $.notify.onError((error) => {
 			var options = {
@@ -17,8 +18,6 @@ const html = () => {
 			return options;
 		})
 	})))
-	.pipe($.filter(config.html.filter.pattern))
-	.pipe($.if(config.watch, $.cached('html')))
 	.pipe($.ejs(
 		config.html.ejs.data,
 		config.html.ejs.options,

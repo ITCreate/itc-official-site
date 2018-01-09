@@ -8,7 +8,6 @@ const webpackConfig = require('../../webpack.config');
 
 const scripts = () => {
 	return gulp.src(config.scripts.src.globs, config.scripts.src.options)
-	.pipe($.if(config.watch, $.cached('scripts')))
 	.pipe($.vinylNamed((file) => {
 		return file.relative.replace(/\.[^.]+$/, '');
 	}))

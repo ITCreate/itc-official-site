@@ -26,8 +26,6 @@ const styles = () => {
 			}
 		]
 	}))
-	.pipe($.if(config.watch, $.cached('styles')))
-	.pipe($.if(config.watch, $.dependents()))
 	.pipe($.if(!config.production, $.sourcemaps.init()))
 	.pipe($.sassGlob())
 	.pipe($.sass(config.styles.sass))

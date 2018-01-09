@@ -3177,13 +3177,6 @@ gsap@^1.20.3:
   version "1.20.3"
   resolved "https://registry.yarnpkg.com/gsap/-/gsap-1.20.3.tgz#c9a6e7be057cf59417483448f925472fa2f73cd7"
 
-gulp-cached@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gulp-cached/-/gulp-cached-1.1.1.tgz#fe7cd4f87f37601e6073cfedee5c2bdaf8b6acce"
-  dependencies:
-    lodash.defaults "^4.2.0"
-    through2 "^2.0.1"
-
 gulp-changed@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gulp-changed/-/gulp-changed-3.2.0.tgz#cee9866d949e09187522523d6c65565f6e32bd7c"
@@ -3212,13 +3205,6 @@ gulp-decompress@^1.2.0:
     decompress "^3.0.0"
     gulp-util "^3.0.1"
     readable-stream "^2.0.2"
-
-gulp-dependents@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/gulp-dependents/-/gulp-dependents-1.2.3.tgz#4976bbd517f03bd6545e853babcffe7eb6c94d47"
-  dependencies:
-    gulp-util "^3.0.8"
-    through2 "^2.0.3"
 
 gulp-ejs@^3.0.1:
   version "3.1.1"
@@ -4575,10 +4561,6 @@ lodash.clone@^4.3.2:
 lodash.clonedeep@^4.3.2:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-
-lodash.defaults@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
 
 lodash.escape@^3.0.0:
   version "3.2.0"

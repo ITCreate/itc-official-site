@@ -48,6 +48,9 @@
 			{
 				"except": [
 					"first-nested"
+				],
+				"ignore": [
+					"after-comment"
 				]
 			}
 		],
@@ -109,6 +112,7 @@
 		"media-query-list-comma-newline-before": "never-multi-line",
 		"media-query-list-comma-space-after": "always-single-line",
 		"media-query-list-comma-space-before": "never",
+		"no-descending-specificity": null,
 		"no-empty-source": null,
 		"no-eol-whitespace": true,
 		"no-missing-end-of-source-newline": true,
@@ -134,7 +138,6 @@
 		"selector-combinator-space-before": "always",
 		"selector-descendant-combinator-no-non-space": true,
 		"selector-list-comma-newline-after": "always",
-		"selector-list-comma-space-after": "never",
 		"selector-list-comma-space-before": "never",
 		"selector-max-empty-lines": 0,
 		"selector-no-qualifying-type": true,

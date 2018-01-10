@@ -14,21 +14,28 @@
 .sec-footer .links {
 	display: flex;
 	justify-content: center;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-size: 80px;
 
 	&__item {
+		display: flex;
+		align-items: center;
 		margin-right: 5px;
 		margin-left: 5px;
 	}
 
 	&__icon {
-		display: block;
-		padding-right: 10px;
-		padding-left: 10px;
+		display: flex;
+		align-items: center;
+		padding: 10px;
 		color: #fff;
+		font-size: 8rem;
 		line-height: 1;
+	}
+
+	&__icon .fa {
+		text-align: center;
+	}
+
+	&__icon--wordpress .fa {
+		font-size: 6.8rem;
 	}
 }

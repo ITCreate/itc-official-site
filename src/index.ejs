@@ -58,7 +58,7 @@
 				<h2 class="sec-about__heading">ITCreate部とは？</h2>
 				<p class="sec-about__body">
 					やりたいことをやるただそれだけの部活です。<br>
-					ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など様々なやりたいことを持った人がいます。<br>
+					ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など<br class="d-none d-md-inline">様々なやりたいことを持った人がいます。<br>
 					やりたいことをいろんな人とできる部活です。
 				</p>
 			</div><!-- .l-container -->
@@ -70,8 +70,10 @@
 				<li class="activities__item">
 					<article class="activity activity--01 activity--reverse">
 						<div class="activity__text">
-							<h3 class="activity__heading"><i class="fa fa-pencil"></i> 勉強会</h3>
-							<p class="activity__lead">GitHub や C 言語など IT 分野をメインに学内で勉強会を開催しています。部員がメンターとして参加することで新たなる技術を学ぶきっかけにもなります。</p>
+							<div class="l-container">
+								<h3 class="activity__heading"><i class="fa fa-pencil"></i> 勉強会</h3>
+								<p class="activity__lead">GitHub や C 言語など IT 分野をメインに学内で勉強会を開催しています。部員がメンターとして参加することで新たなる技術を学ぶきっかけにもなります。</p>
+							</div>
 						</div>
 						<div class="activity__picture">
 							<div class="picture">
@@ -86,8 +88,10 @@
 				<li class="activities__item">
 					<article class="activity activity--02">
 						<div class="activity__text">
-							<h3 class="activity__heading"><i class="fa fa-rocket"></i> 合宿</h3>
-							<p class="activity__lead">2 泊 3 日、ネットワークの構築、BBQ 、LT 大会、24 時間ハッカソンと 3 日間ともに過ごし交流を深める ITCreate 部のメインイベントです。</p>
+							<div class="l-container">
+								<h3 class="activity__heading"><i class="fa fa-rocket"></i> 合宿</h3>
+								<p class="activity__lead">2 泊 3 日、ネットワークの構築、BBQ 、LT 大会、24 時間ハッカソンと 3 日間ともに過ごし交流を深める ITCreate 部のメインイベントです。</p>
+							</div>
 						</div>
 						<div class="activity__picture">
 							<div class="picture">
@@ -102,8 +106,10 @@
 				<li class="activities__item">
 					<article class="activity activity--03 activity--reverse">
 						<div class="activity__text">
-							<h3 class="activity__heading"><i class="fa fa-code"></i> メディアフロンティア</h3>
-							<p class="activity__lead">2 月に OIC で開催される学生作品展です。第 15 回より教室を 1 つお借りして ITC ブースを出しております。業界の方々や一般の方に見ていただける 1 年の集大成となるイベントです。</p>
+							<div class="l-container">
+								<h3 class="activity__heading"><i class="fa fa-code"></i> メディアフロンティア</h3>
+								<p class="activity__lead">2 月に OIC で開催される学生作品展です。第 15 回より教室を 1 つお借りして ITC ブースを出しております。業界の方々や一般の方に見ていただける 1 年の集大成となるイベントです。</p>
+							</div>
 						</div>
 						<div class="activity__picture">
 							<div class="picture">
@@ -118,8 +124,10 @@
 				<li class="activities__item">
 					<article class="activity activity--04">
 						<div class="activity__text">
-							<h3 class="activity__heading"><i class="fa fa-comments"></i> 報告会</h3>
-							<p class="activity__lead">毎月、月初めに先月やったこと、今月やりたいことを報告する場を設けております。新しい技術を知るきっかけにもなります。報告会を通して新たなアイデアや作品を生んでいきたいと思っています。</p>
+							<div class="l-container">
+								<h3 class="activity__heading"><i class="fa fa-comments"></i> 報告会</h3>
+								<p class="activity__lead">毎月、月初めに先月やったこと、今月やりたいことを報告する場を設けております。新しい技術を知るきっかけにもなります。報告会を通して新たなアイデアや作品を生んでいきたいと思っています。</p>
+							</div>
 						</div>
 						<div class="activity__picture">
 							<div class="picture">
@@ -134,8 +142,10 @@
 				<li class="activities__item">
 					<article class="activity activity--05 activity--reverse">
 						<div class="activity__text">
-							<h3 class="activity__heading"><i class="fa fa-users"></i> 学生スタッフ</h3>
-							<p class="activity__lead">カンファレンスなどに学生スタッフとして参加し、現場のエンジニア達と一緒にイベント運営をすることで、現場の技術や雰囲気を学んでいます。</p>
+							<div class="l-container">
+								<h3 class="activity__heading"><i class="fa fa-users"></i> 学生スタッフ</h3>
+								<p class="activity__lead">カンファレンスなどに学生スタッフとして参加し、現場のエンジニア達と一緒にイベント運営をすることで、現場の技術や雰囲気を学んでいます。</p>
+							</div>
 						</div>
 						<div class="activity__picture">
 							<div class="picture">
@@ -170,14 +180,16 @@
 							<p class="members__realname"><%= member.realname %></p>
 							<p class="members__nickname"><%= member.nickname %></p>
 							<p class="members__course"><%= member.course %></p>
-							<% if (member.interests) { %>
-								<dl class="interests">
-									<dt class="sr-only">関心事</dt>
-									<% member.interests.forEach(function(interest) { %>
-										<dd class="interests__item"><%= interest.term %></dd>
-									<% }) %>
-								</dl>
-							<% } %>
+							<div class="members__interests">
+								<% if (member.interests) { %>
+									<dl class="interests">
+										<dt class="sr-only">関心事</dt>
+										<% member.interests.forEach(function(interest) { %>
+											<dd class="interests__item"><%= interest.term %></dd>
+										<% }) %>
+									</dl>
+								<% } %>
+							</div>
 							<% if (member.links) { %>
 								<div class="members__links">
 									<ul class="links">
@@ -208,9 +220,7 @@
 										<% if (member.links.qiita) { %>
 											<li class="links__item">
 												<a class="icon icon--qiita" href="<%- member.links.qiita %>" target="_blank" rel="noopener">
-													<span class="fa-stack">
-														<i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
-													</span>
+													<i class="fa fa-search"></i>
 													<span class="sr-only">Qiita</span>
 												</a>
 											</li>

@@ -1,14 +1,25 @@
-# Development
+# Front-end Template
 
-```
-$ yarn
-$ yarn build
-$ yarn start
-```
+## Development
 
-# Production
+Install dependencies
 
-```
-$ yarn
-$ yarn build:production
-```
+`$ yarn`
+
+Build
+
+`$ yarn build`
+
+Start Browsersync server and file watching
+
+`$ yarn start`
+
+## Production
+
+Install dependencies
+
+`$ yarn`
+
+Build
+
+`$ yarn build:production`

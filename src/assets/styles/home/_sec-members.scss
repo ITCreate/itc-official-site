@@ -108,9 +108,13 @@
 }
 
 .sec-members .interests {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 	&__item {
 		display: inline-block;
-		margin-top: 4px;
+		margin: 2px;
 		padding-right: 8px;
 		padding-left: 8px;
 		border-radius: 2px;

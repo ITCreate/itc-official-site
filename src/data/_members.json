@@ -8,7 +8,7 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "Web Front-end"
+				"term": "Front-end web"
 			},
 			{
 				"term": "Java"
@@ -58,7 +58,7 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "Front-end"
+				"term": "Front-end web"
 			},
 			{
 				"term": "Elixir"
@@ -86,10 +86,10 @@
 				"term": "Web"
 			},
 			{
-				"term": "自作PC"
+				"term": "Homebuilt computer"
 			},
 			{
-				"term": "バイク"
+				"term": "Motorcycle"
 			}
 		],
 		"links": {
@@ -140,10 +140,10 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "アセンブラ"
+				"term": "Assembler"
 			},
 			{
-				"term": "ゲームプログラミング"
+				"term": "Game programming"
 			},
 			{
 				"term": "自作言語"
@@ -165,7 +165,7 @@
 				"term": "Java"
 			},
 			{
-				"term": "人工知能"
+				"term": "AI"
 			}
 		],
 		"links": {
@@ -253,7 +253,7 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "Webプログラミング"
+				"term": "Web programming"
 			},
 			{
 				"term": "C++"

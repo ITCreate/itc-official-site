@@ -1,9 +1,10 @@
 .l-container {
-	padding: 0 30px;
+	@include gutter();
+
 	width: 100%;
 
 	@include media-breakpoint-up(md) {
 		margin: 0 auto;
-		max-width: 1920px;
+		max-width: map-get($grid-breakpoints, xl);
 	}
 }

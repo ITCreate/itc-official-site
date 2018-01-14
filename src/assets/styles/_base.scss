@@ -3,6 +3,7 @@ html {
 }
 
 body {
+	min-width: map-get($grid-breakpoints, sm);
 	letter-spacing: 1px;
 	font-size: 1.3rem;
 	font-family: $font-family;
@@ -10,10 +11,6 @@ body {
 	font-feature-settings: 'palt' 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	@include media-breakpoint-up(sm) {
-		font-size: 1.5rem;
-	}
 
 	@include media-breakpoint-up(md) {
 		font-size: 1.6rem;

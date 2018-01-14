@@ -144,6 +144,7 @@ const copy = {
 		],
 		options: {
 			base: 'src',
+			dot: true,
 			nodir: true,
 		},
 	},

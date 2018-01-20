@@ -1,7 +1,4 @@
 {
-	"repository": "git@github.com:ITCreate/itc-official-site.git",
-	"author": "Takuya Fukuju <chalkygames123@icloud.com>",
-	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
 		"build": "gulp build",

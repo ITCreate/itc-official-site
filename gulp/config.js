@@ -95,7 +95,7 @@ const images = {
 const scripts = {
 	src: {
 		globs: [
-			paths.src + '/assets/scripts/**/index.js',
+			paths.src + '/assets/scripts/**/!(_)*.js',
 		],
 		options: {
 			base: 'src',

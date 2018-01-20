@@ -18,7 +18,6 @@ const html = {
 	src: {
 		globs: [
 			paths.src + '/**/*.ejs',
-			paths.src + '/data/**',
 		],
 		options: {
 			base: 'src',
@@ -51,7 +50,6 @@ const html = {
 	filter: {
 		pattern: [
 			'**/!(_)*.ejs',
-			'data/**',
 		],
 	},
 }

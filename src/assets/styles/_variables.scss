@@ -1,10 +1,12 @@
 $grid-breakpoints: (
-	xs: 0,
-	sm: 320px,
+	xxs: 0,
+	xs: 320px,
+	sm: 375px,
 	md: 768px,
 	lg: 1080px,
-	xl: 1920px
-) !default;
+	xl: 1280px,
+	xxl: 1440px
+);
 
 $font-family: 'Source Han Sans', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'YuGothic', 'Yu Gothic', sans-serif;
 

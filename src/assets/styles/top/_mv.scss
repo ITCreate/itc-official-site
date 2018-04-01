@@ -3,7 +3,9 @@
 	display: flex;
 	align-items: center;
 	min-height: 320px;
-	background: url('/assets/images/mv_bg01.jpg') no-repeat center / cover;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	@include media-breakpoint-up(md) {
 		min-height: 640px;
@@ -11,6 +13,10 @@
 
 	.webp & {
 		background-image: url('/assets/images/mv_bg01.webp');
+	}
+
+	.no-webp & {
+		background-image: url('/assets/images/mv_bg01.jpg');
 	}
 
 	&__logo {

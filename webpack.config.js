@@ -1,61 +1,73 @@
 const webpack = require('webpack')
+const MinifyPlugin = require('babel-minify-webpack-plugin')
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier')
 
-const PRODUCTION = process.env.NODE_ENV === 'production'
-const WATCH = process.env.NODE_ENV === 'watch'
+const gulpConfig = require('./gulp/config')
 
-const commonPlugins = [
-	new webpack.optimize.CommonsChunkPlugin({
-		name: 'assets/scripts/vendor',
-		minChunks: module => /node_modules/.test(module.context),
-	}),
-]
+const commonPlugins = []
 
 const developmentPlugins = [
-	new webpack.SourceMapDevToolPlugin({
-		filename: 'maps/[name].js.map',
-		exclude: ['assets/scripts/vendor'],
-	}),
-	new WebpackBuildNotifierPlugin({
-		suppressSuccess: 'always',
-		messageFormatter: (error, filepath) => {
-			return require('path').relative(__dirname, filepath)
-		},
-	}),
+  new webpack.SourceMapDevToolPlugin({
+    filename: 'maps/[file].map',
+    exclude: [gulpConfig.paths.root ? '/' : '' + 'assets/scripts/vendor']
+  }),
+  new WebpackBuildNotifierPlugin({
+    suppressSuccess: 'always',
+    messageFormatter: (error, filepath) => {
+      if (error) {}
+      return require('path').relative(__dirname, filepath)
+    }
+  })
 ]
 
 const productionPlugins = [
-	new webpack.optimize.ModuleConcatenationPlugin(),
-	new webpack.optimize.UglifyJsPlugin(),
-	new webpack.optimize.AggressiveMergingPlugin(),
+  new MinifyPlugin()
 ]
 
-module.exports = {
-	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				use: [
-					{
-						loader: 'babel-loader',
-					},
-					{
-						loader: 'eslint-loader',
-						options: {
-							emitWarning: true,
-						},
-					},
-				],
-				exclude: `${__dirname}/node_modules`,
-			},
-		],
-	},
-	resolve: {
-		modules: [
-			'src/assets/scripts',
-			'node_modules',
-		],
-	},
-	plugins: commonPlugins.concat(PRODUCTION ? productionPlugins : developmentPlugins),
-	watch: WATCH,
+const config = {
+  mode: process.env.NODE_ENV,
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: gulpConfig.paths.root ? '/' : '' + 'assets/scripts/vendor',
+          chunks: 'all'
+        }
+      }
+    }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'babel-loader?cacheDirectory'
+          },
+          {
+            loader: 'standard-loader'
+          }
+        ],
+        exclude: /node_modules\/(?!(dom7|swiper)\/).*/
+      },
+      {
+        test: /\.modernizrrc(\.json)?$/,
+        use: [ 'modernizr-loader', 'json-loader' ]
+      }
+    ]
+  },
+  resolve: {
+    modules: [
+      'node_modules',
+      gulpConfig.paths.src + gulpConfig.paths.root + '/assets/scripts'
+    ],
+    alias: {
+      modernizr$: require('path').resolve(__dirname, '.modernizrrc')
+    }
+  },
+  plugins: commonPlugins.concat(gulpConfig.env.PRODUCTION ? productionPlugins : developmentPlugins),
+  watch: gulpConfig.program.watch
 }
+
+module.exports = config

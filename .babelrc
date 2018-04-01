@@ -1,4 +1,11 @@
 {
-	"presets": ["@babel/preset-env"]
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "lodash"
+  ],
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": false
+    }]
+  ]
 }
-

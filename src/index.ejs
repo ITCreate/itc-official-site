@@ -2,265 +2,265 @@
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns#">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>ITCreate部 公式サイト</title>
-	<meta name="description" content="やりたいことをやるただそれだけの部活です。ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など様々なやりたいことを持った人がいます。やりたいことをいろんな人とできる部活です。">
+  <title>ITCreate部 公式サイト</title>
+  <meta name="description" content="やりたいことをやるただそれだけの部活です。ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など様々なやりたいことを持った人がいます。やりたいことをいろんな人とできる部活です。">
 
-	<meta property="og:title" content="ITCreate部 公式サイト">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://itc.moe/assets/images/ogp.png">
-	<meta property="og:url" content="https://itc.moe/">
-	<meta property="og:description" content="やりたいことをやるただそれだけの部活です。ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など様々なやりたいことを持った人がいます。やりたいことをいろんな人とできる部活です。">
-	<meta name="twitter:card" content="summary">
+  <meta property="og:title" content="ITCreate部 公式サイト"><!-- to support Twitter Cards, the content must be filled in -->
+  <meta property="og:type" content="website"><!-- the content must be filled in with "website" for the top page and "article" for the other pages -->
+  <meta property="og:image" content="https://itc.moe/assets/images/ogp.png"><!-- the content must be filled in with production URL of the image -->
+  <meta property="og:url" content="https://itc.moe/"><!-- the content must be filled in with production URL of this page -->
+  <meta property="og:description" content="やりたいことをやるただそれだけの部活です。ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など様々なやりたいことを持った人がいます。やりたいことをいろんな人とできる部活です。"><!-- to support Twitter Cards, this tag is required and the content must be filled in -->
+  <meta name="twitter:card" content="summary">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<%- include includes/_gtm-head %>
+  <%- include('./includes/_gtm-head') -%>
 
-	<script src="/libs/js/modernizr-custom.js"></script>
+  <link rel="icon" href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/webclip.png">
 
-	<link rel="icon" href="/assets/images/favicon.ico">
-	<link rel="apple-touch-icon-precomposed" href="/assets/images/webclip.png">
-
-	<link rel="stylesheet" href="/assets/styles/style.css">
-	<link rel="stylesheet" href="/assets/styles/top/index.css">
+  <link rel="stylesheet" href="/assets/styles/style.css">
+  <link rel="stylesheet" href="/assets/styles/top/index.css">
 </head>
 
 <body>
 
-	<%- include ./includes/_gtm-body %>
+  <%- include('./includes/_gtm-body') -%>
 
-	<div class="l-page">
+  <div class="l-page">
 
-		<header class="mv">
-			<div class="l-container">
-				<h1 class="mv__logo">
-					<a class="mv__logo-link" href="/">
-						<picture>
-							<source srcset="/assets/images/itc_logo.webp 1x, /assets/images/itc_logo@2x.webp 2x" type="image/webp">
-							<img src="/assets/images/itc_logo.png" srcset="/assets/images/itc_logo.png 1x, /assets/images/itc_logo@2x.png 2x" alt="ITCreate部">
-						</picture>
-					</a>
-				</h1>
-				<p class="mv__motto">つくりたいものを<br>作りたいときに<br>造りたいだけ<br>創る</p>
-			</div><!-- .l-container -->
-		</header><!-- .mv -->
+    <header class="mv">
+      <div class="l-container">
+        <h1 class="mv__logo">
+        <a class="mv__logo-link" href="/">
+          <picture>
+            <source srcset="/assets/images/itc_logo.webp 1x, /assets/images/itc_logo@2x.webp 2x" type="image/webp">
+            <img src="/assets/images/itc_logo.png" srcset="/assets/images/itc_logo.png 1x, /assets/images/itc_logo@2x.png 2x" alt="ITCreate部">
+          </picture>
+        </a>
+      </h1>
+        <p class="mv__motto">つくりたいものを<br>作りたいときに<br>造りたいだけ<br>創る</p>
+      </div><!-- .l-container -->
+    </header><!-- .mv -->
 
-		<main class="l-main">
+    <main class="l-main">
 
-			<section class="sec-about">
-				<div class="l-container">
-					<picture>
-						<source srcset="/assets/images/itc_sticker.webp 1x, /assets/images/itc_sticker@2x.webp 2x" type="image/webp">
-						<img class="sec-about__sticker" src="/assets/images/itc_sticker.png" srcset="/assets/images/itc_sticker.png 1x, /assets/images/itc_sticker@2x.png 2x" alt="">
-					</picture>
-					<h2 class="sec-about__heading">ITCreate部とは？</h2>
-					<p class="sec-about__body">
-						やりたいことをやるただそれだけの部活です。<br>
-						ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など<br class="d-none d-md-inline">様々なやりたいことを持った人がいます。<br>
-						やりたいことをいろんな人とできる部活です。
-					</p>
-				</div><!-- .l-container -->
-			</section><!-- .sec-about -->
+      <section class="sec-about">
+        <div class="l-container">
+          <picture>
+            <source srcset="/assets/images/itc_sticker.webp 1x, /assets/images/itc_sticker@2x.webp 2x" type="image/webp">
+            <img class="sec-about__sticker" src="/assets/images/itc_sticker.png" srcset="/assets/images/itc_sticker.png 1x, /assets/images/itc_sticker@2x.png 2x" alt="">
+          </picture>
+          <h2 class="sec-about__heading">ITCreate部とは？</h2>
+          <p class="sec-about__body">
+            やりたいことをやるただそれだけの部活です。<br> ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など
+            <br class="d-none d-md-inline">様々なやりたいことを持った人がいます。<br> やりたいことをいろんな人とできる部活です。
+          </p>
+        </div><!-- .l-container -->
+      </section><!-- .sec-about -->
 
-			<section class="sec-activities">
-				<h2 class="sr-only">活動</h2>
-				<ul class="activities">
-					<li class="activities__item">
-						<article class="activity activity--01 activity--reverse">
-							<div class="activity__text">
-								<div class="l-container">
-									<h3 class="activity__heading"><i class="fa fa-pencil"></i> 勉強会</h3>
-									<p class="activity__lead">GitHub や C 言語など IT 分野をメインに学内で勉強会を開催しています。部員がメンターとして参加することで新たなる技術を学ぶきっかけにもなります。</p>
-								</div>
-							</div>
-							<div class="activity__picture">
-								<div class="picture">
-									<picture>
-										<source srcset="/assets/images/activities_img01.webp" type="image/webp">
-										<img src="/assets/images/activities_img01.jpg" alt="">
-									</picture>
-								</div>
-							</div>
-						</article><!-- .activity -->
-					</li><!-- .activities__item -->
-					<li class="activities__item">
-						<article class="activity activity--02">
-							<div class="activity__text">
-								<div class="l-container">
-									<h3 class="activity__heading"><i class="fa fa-rocket"></i> 合宿</h3>
-									<p class="activity__lead">2 泊 3 日、ネットワークの構築、BBQ 、LT 大会、24 時間ハッカソンと 3 日間ともに過ごし交流を深める ITCreate 部のメインイベントです。</p>
-								</div>
-							</div>
-							<div class="activity__picture">
-								<div class="picture">
-									<picture>
-										<source srcset="/assets/images/activities_img02.webp" type="image/webp">
-										<img src="/assets/images/activities_img02.jpg" alt="">
-									</picture>
-								</div>
-							</div>
-						</article><!-- .activity -->
-					</li><!-- .activities__item -->
-					<li class="activities__item">
-						<article class="activity activity--03 activity--reverse">
-							<div class="activity__text">
-								<div class="l-container">
-									<h3 class="activity__heading"><i class="fa fa-code"></i> メディアフロンティア</h3>
-									<p class="activity__lead">2 月に OIC で開催される学生作品展です。第 15 回より教室を 1 つお借りして ITC ブースを出しております。業界の方々や一般の方に見ていただける 1 年の集大成となるイベントです。</p>
-								</div>
-							</div>
-							<div class="activity__picture">
-								<div class="picture">
-									<picture>
-										<source srcset="/assets/images/activities_img03.webp" type="image/webp">
-										<img src="/assets/images/activities_img03.jpg" alt="">
-									</picture>
-								</div>
-							</div>
-						</article><!-- .activity -->
-					</li><!-- .activities__item -->
-					<li class="activities__item">
-						<article class="activity activity--04">
-							<div class="activity__text">
-								<div class="l-container">
-									<h3 class="activity__heading"><i class="fa fa-comments"></i> 報告会</h3>
-									<p class="activity__lead">毎月、月初めに先月やったこと、今月やりたいことを報告する場を設けております。新しい技術を知るきっかけにもなります。報告会を通して新たなアイデアや作品を生んでいきたいと思っています。</p>
-								</div>
-							</div>
-							<div class="activity__picture">
-								<div class="picture">
-									<picture>
-										<source srcset="/assets/images/activities_img04.webp" type="image/webp">
-										<img src="/assets/images/activities_img04.jpg" alt="">
-									</picture>
-								</div>
-							</div>
-						</article><!-- .activity -->
-					</li><!-- .activities__item -->
-					<li class="activities__item">
-						<article class="activity activity--05 activity--reverse">
-							<div class="activity__text">
-								<div class="l-container">
-									<h3 class="activity__heading"><i class="fa fa-users"></i> 学生スタッフ</h3>
-									<p class="activity__lead">カンファレンスなどに学生スタッフとして参加し、現場のエンジニア達と一緒にイベント運営をすることで、現場の技術や雰囲気を学んでいます。</p>
-								</div>
-							</div>
-							<div class="activity__picture">
-								<div class="picture">
-									<picture>
-										<source srcset="/assets/images/activities_img05.webp" type="image/webp">
-										<img src="/assets/images/activities_img05.jpg" alt="">
-									</picture>
-								</div>
-							</div>
-						</article><!-- .activity -->
-					</li><!-- .activities__item -->
-				</ul><!-- .activities -->
-			</section><!-- .sec-activities -->
+      <section class="sec-activities">
+        <h2 class="sr-only">活動</h2>
+        <ul class="activities">
+          <li class="activities__item">
+            <article class="activity activity--01 activity--reverse">
+              <div class="activity__text">
+                <div class="l-container">
+                  <h3 class="activity__heading"><i class="fa fa-pencil"></i> 勉強会</h3>
+                  <p class="activity__lead">GitHub や C 言語など IT 分野をメインに学内で勉強会を開催しています。部員がメンターとして参加することで新たなる技術を学ぶきっかけにもなります。</p>
+                </div>
+              </div>
+              <div class="activity__picture">
+                <div class="picture">
+                  <picture>
+                    <source srcset="/assets/images/activities_img01.webp" type="image/webp">
+                    <img src="/assets/images/activities_img01.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+            </article><!-- .activity -->
+          </li><!-- .activities__item -->
+          <li class="activities__item">
+            <article class="activity activity--02">
+              <div class="activity__text">
+                <div class="l-container">
+                  <h3 class="activity__heading"><i class="fa fa-rocket"></i> 合宿</h3>
+                  <p class="activity__lead">2 泊 3 日、ネットワークの構築、BBQ 、LT 大会、24 時間ハッカソンと 3 日間ともに過ごし交流を深める ITCreate 部のメインイベントです。</p>
+                </div>
+              </div>
+              <div class="activity__picture">
+                <div class="picture">
+                  <picture>
+                    <source srcset="/assets/images/activities_img02.webp" type="image/webp">
+                    <img src="/assets/images/activities_img02.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+            </article><!-- .activity -->
+          </li><!-- .activities__item -->
+          <li class="activities__item">
+            <article class="activity activity--03 activity--reverse">
+              <div class="activity__text">
+                <div class="l-container">
+                  <h3 class="activity__heading"><i class="fa fa-code"></i> メディアフロンティア</h3>
+                  <p class="activity__lead">2 月に OIC で開催される学生作品展です。第 15 回より教室を 1 つお借りして ITC ブースを出しております。業界の方々や一般の方に見ていただける 1 年の集大成となるイベントです。</p>
+                </div>
+              </div>
+              <div class="activity__picture">
+                <div class="picture">
+                  <picture>
+                    <source srcset="/assets/images/activities_img03.webp" type="image/webp">
+                    <img src="/assets/images/activities_img03.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+            </article><!-- .activity -->
+          </li><!-- .activities__item -->
+          <li class="activities__item">
+            <article class="activity activity--04">
+              <div class="activity__text">
+                <div class="l-container">
+                  <h3 class="activity__heading"><i class="fa fa-comments"></i> 報告会</h3>
+                  <p class="activity__lead">毎月、月初めに先月やったこと、今月やりたいことを報告する場を設けております。新しい技術を知るきっかけにもなります。報告会を通して新たなアイデアや作品を生んでいきたいと思っています。</p>
+                </div>
+              </div>
+              <div class="activity__picture">
+                <div class="picture">
+                  <picture>
+                    <source srcset="/assets/images/activities_img04.webp" type="image/webp">
+                    <img src="/assets/images/activities_img04.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+            </article><!-- .activity -->
+          </li><!-- .activities__item -->
+          <li class="activities__item">
+            <article class="activity activity--05 activity--reverse">
+              <div class="activity__text">
+                <div class="l-container">
+                  <h3 class="activity__heading"><i class="fa fa-users"></i> 学生スタッフ</h3>
+                  <p class="activity__lead">カンファレンスなどに学生スタッフとして参加し、現場のエンジニア達と一緒にイベント運営をすることで、現場の技術や雰囲気を学んでいます。</p>
+                </div>
+              </div>
+              <div class="activity__picture">
+                <div class="picture">
+                  <picture>
+                    <source srcset="/assets/images/activities_img05.webp" type="image/webp">
+                    <img src="/assets/images/activities_img05.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+            </article><!-- .activity -->
+          </li><!-- .activities__item -->
+        </ul><!-- .activities -->
+      </section><!-- .sec-activities -->
 
-			<section class="sec-members">
-				<div class="l-container">
-					<h2 class="sr-only">部員</h2>
-					<ul class="members">
-						<% members.forEach(function(member) { %>
-							<li class="members__item">
-								<p class="members__position"><%= member.position %></p>
-								<p class="members__avatar">
-									<% if (member.avatarExt) { %>
-										<picture>
-											<source srcset="/assets/images/avatar_<%= member.id %>.webp 1x, /assets/images/avatar_<%= member.id %>@2x.webp 2x" type="image/webp">
-											<img src="/assets/images/avatar_<%= member.id %>.<%= member.avatarExt %>" srcset="/assets/images/avatar_<%= member.id %>.<%= member.avatarExt %> 1x, /assets/images/avatar_<%= member.id %>@2x.<%= member.avatarExt %> 2x" alt="">
-										</picture>
-									<% } else { %>
-										<img src="/assets/images/avatar_empty.svg" alt="">
-									<% } %>
-								</p>
-								<p class="members__realname"><%= member.realname %></p>
-								<p class="members__nickname"><%= member.nickname %></p>
-								<p class="members__course"><%= member.course %></p>
-								<div class="members__interests">
-									<% if (member.interests) { %>
-										<dl class="interests">
-											<dt class="sr-only">関心事</dt>
-											<% member.interests.forEach(function(interest) { %>
-												<dd class="interests__item"><%= interest.term %></dd>
-											<% }) %>
-										</dl>
-									<% } %>
-								</div>
-								<% if (member.links) { %>
-									<div class="members__links">
-										<ul class="links">
-											<% if (member.links.twitter) { %>
-												<li class="links__item">
-													<a class="icon icon--twitter" href="<%- member.links.twitter %>" target="_blank" rel="noopener">
-														<i class="fa fa-twitter"></i>
-														<span class="sr-only">Twitter</span>
-													</a>
-												</li>
-											<% } %>
-											<% if (member.links.facebook) { %>
-												<li class="links__item">
-													<a class="icon icon--facebook" href="<%- member.links.facebook %>" target="_blank" rel="noopener">
-														<i class="fa fa-facebook"></i>
-														<span class="sr-only">Facebook</span>
-													</a>
-												</li>
-											<% } %>
-											<% if (member.links.github) { %>
-												<li class="links__item">
-													<a class="icon icon--github" href="<%- member.links.github %>" target="_blank" rel="noopener">
-														<i class="fa fa-github"></i>
-														<span class="sr-only">GitHub</span>
-													</a>
-												</li>
-											<% } %>
-											<% if (member.links.qiita) { %>
-												<li class="links__item">
-													<a class="icon icon--qiita" href="<%- member.links.qiita %>" target="_blank" rel="noopener">
-														<i class="fa fa-search"></i>
-														<span class="sr-only">Qiita</span>
-													</a>
-												</li>
-											<% } %>
-										</ul><!-- .links -->
-									</div><!-- .members__links -->
-								<% } %>
-							</li><!-- .members__item -->
-						<% }) %>
-					</ul><!-- .members -->
-				</div><!-- .l-container -->
-			</section><!-- .sec-members -->
+      <section class="sec-members">
+        <div class="l-container">
+          <h2 class="sr-only">部員</h2>
+          <ul class="members">
+            <% members.forEach(function(member) { %>
+              <li class="members__item">
+                <p class="members__position"><%= member.position %></p>
+                <p class="members__avatar">
+                  <% if (member.avatarExt) { %>
+                    <picture>
+                      <source srcset="/assets/images/avatar_<%= member.id %>.webp 1x, /assets/images/avatar_<%= member.id %>@2x.webp 2x" type="image/webp">
+                      <img src="/assets/images/avatar_<%= member.id %>.<%= member.avatarExt %>" srcset="/assets/images/avatar_<%= member.id %>.<%= member.avatarExt %> 1x, /assets/images/avatar_<%= member.id %>@2x.<%= member.avatarExt %> 2x" alt="">
+                    </picture>
+                  <% } else { %>
+                    <img src="/assets/images/avatar_empty.svg" alt="">
+                  <% } %>
+                </p>
+                <p class="members__realname"><%= member.realname %></p>
+                <p class="members__nickname"><%= member.nickname %></p>
+                <p class="members__course"><%= member.course %></p>
+                <div class="members__interests">
+                  <% if (member.interests) { %>
+                    <dl class="interests">
+                      <dt class="sr-only">関心事</dt>
+                      <% member.interests.forEach(function(interest) { %>
+                        <dd class="interests__item">
+                          <%= interest.term %>
+                        </dd>
+                      <% }) %>
+                    </dl>
+                  <% } %>
+                </div>
+                <% if (member.links) { %>
+                  <div class="members__links">
+                    <ul class="links">
+                      <% if (member.links.twitter) { %>
+                        <li class="links__item">
+                          <a class="icon icon--twitter" href="<%- member.links.twitter %>" target="_blank" rel="noopener">
+                            <i class="fa fa-twitter"></i>
+                            <span class="sr-only">Twitter</span>
+                          </a>
+                        </li>
+                      <% } %>
+                      <% if (member.links.facebook) { %>
+                        <li class="links__item">
+                          <a class="icon icon--facebook" href="<%- member.links.facebook %>" target="_blank" rel="noopener">
+                            <i class="fa fa-facebook"></i>
+                            <span class="sr-only">Facebook</span>
+                          </a>
+                        </li>
+                      <% } %>
+                      <% if (member.links.github) { %>
+                        <li class="links__item">
+                          <a class="icon icon--github" href="<%- member.links.github %>" target="_blank" rel="noopener">
+                            <i class="fa fa-github"></i>
+                            <span class="sr-only">GitHub</span>
+                          </a>
+                        </li>
+                      <% } %>
+                      <% if (member.links.qiita) { %>
+                        <li class="links__item">
+                          <a class="icon icon--qiita" href="<%- member.links.qiita %>" target="_blank" rel="noopener">
+                            <i class="fa fa-search"></i>
+                            <span class="sr-only">Qiita</span>
+                          </a>
+                        </li>
+                      <% } %>
+                    </ul><!-- .links -->
+                  </div><!-- .members__links -->
+                <% } %>
+              </li><!-- .members__item -->
+            <% }) %>
+          </ul><!-- .members -->
+        </div><!-- .l-container -->
+      </section><!-- .sec-members -->
 
-		</main><!-- .l-main -->
+    </main><!-- .l-main -->
 
-		<footer class="sec-footer">
-			<div class="l-container">
-				<h2 class="sr-only">関連リンク</h2>
-				<ul class="links">
-					<li class="links__item">
-						<a class="links__icon links__icon--github" href="https://github.com/ITCreate/" target="_blank" rel="noopener">
-							<i class="fa fa-github"></i>
-							<span class="sr-only">GitHub</span>
-						</a>
-					</li>
-					<li class="links__item">
-						<a class="links__icon links__icon--wordpress" href="http://blog.itc.moe" target="_blank" rel="noopener">
-							<i class="fa fa-wordpress"></i>
-							<span class="sr-only">Blog</span>
-						</a>
-					</li>
-				</ul><!-- .links -->
-			</div><!-- .l-container -->
-		</footer><!-- .footer -->
+    <footer class="sec-footer">
+      <div class="l-container">
+        <h2 class="sr-only">関連リンク</h2>
+        <ul class="links">
+          <li class="links__item">
+            <a class="links__icon links__icon--github" href="https://github.com/ITCreate/" target="_blank" rel="noopener">
+            <i class="fa fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          </li>
+          <li class="links__item">
+            <a class="links__icon links__icon--wordpress" href="http://blog.itc.moe" target="_blank" rel="noopener">
+            <i class="fa fa-wordpress"></i>
+            <span class="sr-only">Blog</span>
+          </a>
+          </li>
+        </ul><!-- .links -->
+      </div><!-- .l-container -->
+    </footer><!-- .footer -->
 
-	</div><!-- .l-page -->
+  </div><!-- .l-page -->
 
-	<script src="/assets/scripts/vendor.js"></script>
-	<script src="/assets/scripts/top/index.js"></script>
+  <!-- <script src="/assets/scripts/vendor.js" defer></script> -->
+  <script src="/assets/scripts/common.js" defer></script>
+  <!-- <script src="/assets/scripts/top/index.js" defer></script> -->
 
 </body>
 

@@ -1,9 +1,7 @@
+@charset 'utf-8';
+
 // prerequisites
-@import '../imports';
+@import '../global/**';
 
 // partials
-@import 'mv';
-@import 'sec-about';
-@import 'sec-activities';
-@import 'sec-members';
-@import 'sec-footer';
+@import '_*';

@@ -5,7 +5,7 @@
 		"course": "IT スペシャリスト専攻 3 年",
 		"realname": "伯 健弘",
 		"nickname": "Hack-Man",
-		"avatarExt": "jpg",
+		"avatarExt": "png",
 		"interests": [
 			{
 				"term": "Front-end web"
@@ -14,7 +14,7 @@
 				"term": "Elixir"
 			},
 			{
-				"term": "Unity"
+				"term": "UE4"
 			}
 		],
 		"links": {

@@ -8,13 +8,13 @@
 		"avatarExt": "png",
 		"interests": [
 			{
-				"term": "Front-end web"
+				"term": "Web フロントエンド"
 			},
 			{
 				"term": "Elixir"
 			},
 			{
-				"term": "UE4"
+				"term": "Unreal Engine 4"
 			}
 		],
 		"links": {
@@ -36,10 +36,10 @@
 				"term": "Web"
 			},
 			{
-				"term": "Homebuilt computer"
+				"term": "自作 PC"
 			},
 			{
-				"term": "Motorcycle"
+				"term": "バイク"
 			}
 		],
 		"links": {
@@ -90,10 +90,10 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "Assembler"
+				"term": "アセンブラ"
 			},
 			{
-				"term": "Game programming"
+				"term": "ゲームプログラミング"
 			},
 			{
 				"term": "自作言語"
@@ -130,7 +130,7 @@
 		"nickname": "そぉい。",
 		"interests": [
 			{
-				"term": "Programming"
+				"term": "プログラミング"
 			}
 		],
 		"links": {
@@ -169,7 +169,7 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "Network"
+				"term": "コンピュータネットワーク"
 			}
 		],
 		"links": {
@@ -209,7 +209,7 @@
 				"term": "C++"
 			},
 			{
-				"term": "マネジメント"
+				"term": "Team management"
 			}
 		],
 		"links": {
@@ -233,7 +233,7 @@
 				"term": "Python"
 			},
 			{
-				"term": "RaspberryPI"
+				"term": "Raspberry PI"
 			}
 		],
 		"links": {

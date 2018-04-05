@@ -203,13 +203,13 @@
 		"avatarExt": "jpg",
 		"interests": [
 			{
-				"term": "Web programming"
+				"term": "Web プログラミング"
 			},
 			{
 				"term": "C++"
 			},
 			{
-				"term": "Team management"
+				"term": "マネジメント"
 			}
 		],
 		"links": {

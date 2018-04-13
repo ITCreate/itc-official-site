@@ -82,6 +82,26 @@
 		}
 	},
 	{
+		"id": "b7090",
+		"position": "部員",
+		"course": "ITスペシャリスト専攻 2 年",
+		"realname": "金子凌雅",
+		"nickname": "-",
+		"avatarExt": "jpg",
+		"interests": [
+			{
+				"term": "Ruby"
+			},
+			{
+				"term": "Go"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/37x9?s=06",
+			"facebook": "https://m.facebook.com/ryouga.bakeneko"
+		}
+	},
+	{
 		"id": "b7306",
 		"position": "部員",
 		"course": "システムエンジニア専攻 2 年",

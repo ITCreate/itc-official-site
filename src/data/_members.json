@@ -124,6 +124,25 @@
 		}
 	},
 	{
+		"id": "b7202",
+		"position": "部員",
+		"course": "システムエンジニア専攻 2 年",
+		"realname": "田中 陸斗",
+		"nickname": "他成理",
+		"avatarExt": "jpg",
+		"interests": [
+			{
+				"term": "組み込み"
+			},
+			{
+				"term": "Web系"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/mugenryu1101"
+		}
+	},
+	{
 		"id": "b7022",
 		"position": "部員",
 		"course": "ITシステムエンジニアコース 2 年",
@@ -190,6 +209,30 @@
 		"interests": [
 			{
 				"term": "コンピュータネットワーク"
+			}
+		],
+		"links": {
+			"twitter": "https://twitter.com/Jadiunr",
+			"facebook": "https://www.facebook.com/Jadiunr",
+			"github": "https://github.com/Jadiunr"
+		}
+	},
+	{
+		"id": "b6224",
+		"position": "部員",
+		"course": "ネットワークセキュリティ専攻 3 年",
+		"realname": "根来 玲冶",
+		"nickname": "れいや",
+		"avatarExt": "png",
+		"interests": [
+			{
+				"term": "Laravel"
+			},
+			{
+				"term": "Vue.js"
+			},
+			{
+				"term": "Electron"
 			}
 		],
 		"links": {

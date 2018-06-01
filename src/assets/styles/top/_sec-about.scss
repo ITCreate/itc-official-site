@@ -15,7 +15,7 @@
   }
 
   &__heading {
-    @include heading-font();
+    @include heading-typography();
 
     margin-top: 20px;
     margin-bottom: 0;

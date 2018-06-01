@@ -1,0 +1,44 @@
+html {
+  min-width: map-get($grid-breakpoints, xs);
+  font-size: 10px;
+
+  @include media-breakpoint-up(md) {
+    min-width: map-get($grid-breakpoints, xl);
+  }
+}
+
+body {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-family: 'Source Han Sans', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'YuGothic', 'Yu Gothic', sans-serif;
+  font-feature-settings: 'palt' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.6rem;
+  }
+}
+
+// Eliminate extra whitespace caused by img element that inserted by access analysis script
+body > img {
+  display: block;
+  height: 0 !important; // stylelint-disable-line declaration-no-important
+  font-size: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}

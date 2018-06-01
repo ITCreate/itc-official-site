@@ -7,14 +7,18 @@
 }
 
 .sec-members .members {
-  display: flex;
-  flex-wrap: wrap;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
 
   &__item {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10px 15px 30px;
+    padding: 30px 15px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -22,7 +26,7 @@
 
     @include media-breakpoint-up(md) {
       margin-left: 15px;
-      width: calc(25% - 15px);
+      width: calc(100% / 4 - (15px / 4 * 3));
     }
   }
 
@@ -47,6 +51,9 @@
   }
 
   &__position {
+    position: absolute;
+    top: 10px;
+    left: 15px;
     align-self: flex-start;
     color: #999;
     text-align: left;
@@ -54,7 +61,6 @@
 
   &__avatar {
     overflow: hidden;
-    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 50%;
     color: #fff;
@@ -68,7 +74,7 @@
   }
 
   &__realname {
-    @include heading-font();
+    @include heading-typography();
 
     margin-top: 15px;
     font-size: 2.2rem;

@@ -1,29 +1,3 @@
-const program = require('commander')
-
-program
-  .option('-w, --watch')
-  .parse(process.argv)
-
-const plugins = require('gulp-load-plugins')({
-  overridePattern: false,
-  pattern: [
-    'ansi-regex',
-    'autoprefixer',
-    'browser-sync',
-    'css-mqpacker',
-    'event-stream',
-    'imagemin-pngquant',
-    'imagemin-webp',
-    'normalize-path',
-    'postcss-assets',
-    'vinyl-named',
-    'webpack',
-    'webpack-stream'
-  ]
-})
-
-const myServer = require('browser-sync').create()
-
 const paths = {
   src: 'src',
   dest: 'public',
@@ -32,9 +6,7 @@ const paths = {
 
 const clean = {
   del: {
-    patterns: [
-      paths.dest + '/**/*'
-    ],
+    patterns: `${paths.dest}/*`,
     options: {
       dot: true
     }
@@ -43,18 +15,18 @@ const clean = {
 
 const html = {
   src: {
-    globs: [
-      paths.src + '/**/*.ejs'
-    ],
+    globs: `${paths.src}/**/*.ejs`,
     options: {
       base: paths.src
     }
   },
   ejs: {
     data: {
-      members: require(require('path').resolve(paths.src + '/data/_members.json'))
+      members: require(require('path').resolve(`${paths.src}${paths.root}/data/_members.json`))
     },
-    options: null,
+    options: {
+      root: `${paths.src}${paths.root}`
+    },
     settings: {
       ext: '.html'
     }
@@ -75,25 +47,13 @@ const html = {
     sortClassName: true
   },
   filter: {
-    pattern: [
-      '**/!(_)*.ejs'
-    ]
+    pattern: '**/!(_)*.ejs'
   }
 }
 
 const images = {
   src: {
-    globs: [
-      paths.src + paths.root + '/assets/images/**/*.+(gif|jpg|png|svg)'
-    ],
-    options: {
-      base: paths.src
-    }
-  },
-  webpSrc: {
-    globs: [
-      paths.src + paths.root + '/assets/images/**/*.+(jpg|png)'
-    ],
+    globs: `${paths.src}${paths.root}/assets/images/**/*.+(gif|jpg|png|svg)`,
     options: {
       base: paths.src
     }
@@ -114,14 +74,15 @@ const images = {
   imageminWebp: {
     quality: '90',
     method: 6
+  },
+  webpFilter: {
+    pattern: '**/*.+(jpg|png)'
   }
 }
 
 const scripts = {
   src: {
-    globs: [
-      paths.src + paths.root + '/assets/scripts/**/!(_)*.js'
-    ],
+    globs: `${paths.src}${paths.root}/assets/scripts/**/!(_)*.js`,
     options: {
       base: paths.src
     }
@@ -138,27 +99,20 @@ const serve = {
 
 const styles = {
   src: {
-    globs: [
-      paths.src + paths.root + '/assets/styles/**/*.scss'
-    ],
+    globs: `${paths.src}${paths.root}/assets/styles/**/*.scss`,
     options: {
       base: paths.src
     }
   },
-  sass: {
-    includePaths: [
-      'node_modules/ress',
-      require('node-font-awesome').scssPath
-    ],
-    outputStyle: 'expanded'
-  },
-  postcss: {
-    cssMqpacker: {
-      sort: true
-    },
-    postcssAssets: {
-      basePath: paths.dest
+  sourcemaps: {
+    init: {
+      loadMaps: true
     }
+  },
+  sass: {
+    importer: require('node-sass-magic-importer')(),
+    includePaths: `${paths.src}${paths.root}/assets/styles`,
+    outputStyle: 'compressed'
   },
   cleanCss: {
     rebase: false
@@ -176,7 +130,7 @@ function negatePattern (globs) {
 const copy = {
   src: {
     globs: [
-      paths.src + '/**/!(_)*',
+      `${paths.src}/**/!(_)*`,
       ...negatePattern(html.src.globs),
       ...negatePattern(images.src.globs),
       ...negatePattern(styles.src.globs),
@@ -191,14 +145,17 @@ const copy = {
   }
 }
 
+const mode = process.env.NODE_ENV || 'production'
+
+const program = require('commander')
+
+program
+  .option('-w, --watch')
+  .parse(process.argv)
+
+const server = require('browser-sync').create()
+
 module.exports = {
-  env: {
-    DEVELOPMENT: process.env.NODE_ENV === 'development',
-    PRODUCTION: process.env.NODE_ENV === 'production'
-  },
-  program,
-  plugins,
-  myServer,
   paths,
   clean,
   copy,
@@ -206,5 +163,11 @@ module.exports = {
   images,
   scripts,
   serve,
-  styles
+  styles,
+  env: {
+    DEVELOPMENT: mode === 'development',
+    PRODUCTION: mode === 'production'
+  },
+  watch: program.watch,
+  server
 }

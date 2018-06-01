@@ -46,13 +46,13 @@
     color: #fff;
 
     @include media-breakpoint-up(md) {
-      padding: 60px 30px;
+      padding: 60px 90px;
       width: 43%;
     }
   }
 
   &__heading {
-    @include heading-font();
+    @include heading-typography();
 
     font-size: 2rem;
 

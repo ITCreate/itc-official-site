@@ -80,15 +80,7 @@
   }
 }
 
-@mixin gutter {
-  padding: 0 $gutter;
-
-  @include media-breakpoint-up(md) {
-    padding: 0 $gutter-md-up;
-  }
-}
-
-@mixin heading-font {
+@mixin heading-typography {
   letter-spacing: 2px;
-  font-family: 'Gen Jyuu Gothic P Regular', $font-family;
+  font-family: 'Gen Jyuu Gothic P Regular', sans-serif;
 }

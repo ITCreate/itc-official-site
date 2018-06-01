@@ -1,16 +1,14 @@
 @charset 'utf-8';
 
 // vendors
-@import 'ress';
-@import 'font-awesome';
+@import '~ress';
+@import '~font-awesome';
 
 // prerequisites
-@import 'global/**';
+@import 'abstracts/*';
 
 // categorized rules
-@import 'typography';
-@import 'base';
-@import 'layouts/**';
-@import 'modules/**';
-@import 'components/**';
-@import 'utilities/**';
+@import 'base/*';
+@import 'layouts/*';
+@import 'components/*';
+@import 'utilities/*';

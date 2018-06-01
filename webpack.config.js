@@ -1,22 +1,13 @@
-const webpack = require('webpack')
 const MinifyPlugin = require('babel-minify-webpack-plugin')
-const WebpackBuildNotifierPlugin = require('webpack-build-notifier')
+const WebpackNotifierPlugin = require('webpack-notifier')
 
 const gulpConfig = require('./gulp/config')
 
 const commonPlugins = []
 
 const developmentPlugins = [
-  new webpack.SourceMapDevToolPlugin({
-    filename: 'maps/[file].map',
-    exclude: [gulpConfig.paths.root ? '/' : '' + 'assets/scripts/vendor']
-  }),
-  new WebpackBuildNotifierPlugin({
-    suppressSuccess: 'always',
-    messageFormatter: (error, filepath) => {
-      if (error) {}
-      return require('path').relative(__dirname, filepath)
-    }
+  new WebpackNotifierPlugin({
+    skipFirstNotification: true
   })
 ]
 
@@ -24,14 +15,18 @@ const productionPlugins = [
   new MinifyPlugin()
 ]
 
-const config = {
+module.exports = {
   mode: process.env.NODE_ENV,
+  output: {
+    devtoolModuleFilenameTemplate: 'webpack://[namespace]/[resource]?[loaders]'
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {
         vendors: {
+          minSize: 0,
           test: /[\\/]node_modules[\\/]/,
-          name: gulpConfig.paths.root ? '/' : '' + 'assets/scripts/vendor',
+          name: `${gulpConfig.paths.root ? `${gulpConfig.paths.root.substring(1)}/` : ''}assets/scripts/vendor`,
           chunks: 'all'
         }
       }
@@ -49,7 +44,7 @@ const config = {
             loader: 'standard-loader'
           }
         ],
-        exclude: /node_modules\/(?!(dom7|swiper)\/).*/
+        exclude: /node_modules/
       },
       {
         test: /\.modernizrrc(\.json)?$/,
@@ -60,14 +55,13 @@ const config = {
   resolve: {
     modules: [
       'node_modules',
-      gulpConfig.paths.src + gulpConfig.paths.root + '/assets/scripts'
+      `${gulpConfig.paths.src}${gulpConfig.paths.root}/assets/scripts`
     ],
     alias: {
       modernizr$: require('path').resolve(__dirname, '.modernizrrc')
     }
   },
-  plugins: commonPlugins.concat(gulpConfig.env.PRODUCTION ? productionPlugins : developmentPlugins),
-  watch: gulpConfig.program.watch
+  devtool: gulpConfig.env.DEVELOPMENT ? 'eval-source-map' : false,
+  plugins: commonPlugins.concat(gulpConfig.env.DEVELOPMENT ? developmentPlugins : [], gulpConfig.env.PRODUCTION ? productionPlugins : []),
+  watch: gulpConfig.watch
 }
-
-module.exports = config

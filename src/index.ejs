@@ -17,7 +17,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <%- include('./includes/_gtm-head') %>
+  <%- include('/includes/_gtm-head') %>
 
   <link rel="icon" href="/assets/images/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="/assets/images/webclip.png">
@@ -28,7 +28,7 @@
 
 <body>
 
-  <%- include('./includes/_gtm-body') %>
+  <%- include('/includes/_gtm-body') %>
 
   <div class="l-page">
 
@@ -57,13 +57,13 @@
           <h2 class="sec-about__heading">ITCreate部とは？</h2>
           <p class="sec-about__body">
             やりたいことをやるただそれだけの部活です。<br> ITCにはネットワーク、プログラミング、デザイン、ゲーム制作、チーム開発など
-            <br class="d-none d-md-inline">様々なやりたいことを持った人がいます。<br> やりたいことをいろんな人とできる部活です。
+            <br class="u-d-none u-d-md-inline">様々なやりたいことを持った人がいます。<br> やりたいことをいろんな人とできる部活です。
           </p>
         </div><!-- .l-container -->
       </section><!-- .sec-about -->
 
       <section class="sec-activities">
-        <h2 class="sr-only">活動</h2>
+        <h2 class="u-sr-only">活動</h2>
         <ul class="activities">
           <li class="activities__item">
             <article class="activity activity--01 activity--reverse">
@@ -160,7 +160,7 @@
 
       <section class="sec-members">
         <div class="l-container">
-          <h2 class="sr-only">部員</h2>
+          <h2 class="u-sr-only">部員</h2>
           <ul class="members">
             <% members.forEach(function(member) { %>
               <li class="members__item">
@@ -181,7 +181,7 @@
                 <div class="members__interests">
                   <% if (member.interests) { %>
                     <dl class="interests">
-                      <dt class="sr-only">関心事</dt>
+                      <dt class="u-sr-only">関心事</dt>
                       <% member.interests.forEach(function(interest) { %>
                         <dd class="interests__item">
                           <%= interest.term %>
@@ -197,7 +197,7 @@
                         <li class="links__item">
                           <a class="icon icon--twitter" href="<%- member.links.twitter %>" target="_blank" rel="noopener">
                             <i class="fa fa-twitter"></i>
-                            <span class="sr-only">Twitter</span>
+                            <span class="u-sr-only">Twitter</span>
                           </a>
                         </li>
                       <% } %>
@@ -205,7 +205,7 @@
                         <li class="links__item">
                           <a class="icon icon--facebook" href="<%- member.links.facebook %>" target="_blank" rel="noopener">
                             <i class="fa fa-facebook"></i>
-                            <span class="sr-only">Facebook</span>
+                            <span class="u-sr-only">Facebook</span>
                           </a>
                         </li>
                       <% } %>
@@ -213,7 +213,7 @@
                         <li class="links__item">
                           <a class="icon icon--github" href="<%- member.links.github %>" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
-                            <span class="sr-only">GitHub</span>
+                            <span class="u-sr-only">GitHub</span>
                           </a>
                         </li>
                       <% } %>
@@ -221,7 +221,7 @@
                         <li class="links__item">
                           <a class="icon icon--qiita" href="<%- member.links.qiita %>" target="_blank" rel="noopener">
                             <i class="fa fa-search"></i>
-                            <span class="sr-only">Qiita</span>
+                            <span class="u-sr-only">Qiita</span>
                           </a>
                         </li>
                       <% } %>
@@ -238,18 +238,18 @@
 
     <footer class="sec-footer">
       <div class="l-container">
-        <h2 class="sr-only">関連リンク</h2>
+        <h2 class="u-sr-only">関連リンク</h2>
         <ul class="links">
           <li class="links__item">
             <a class="links__icon links__icon--github" href="https://github.com/ITCreate/" target="_blank" rel="noopener">
             <i class="fa fa-github"></i>
-            <span class="sr-only">GitHub</span>
+            <span class="u-sr-only">GitHub</span>
           </a>
           </li>
           <li class="links__item">
             <a class="links__icon links__icon--wordpress" href="http://blog.itc.moe" target="_blank" rel="noopener">
             <i class="fa fa-wordpress"></i>
-            <span class="sr-only">Blog</span>
+            <span class="u-sr-only">Blog</span>
           </a>
           </li>
         </ul><!-- .links -->

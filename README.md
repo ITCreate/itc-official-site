@@ -4,7 +4,7 @@ The official site of the ITCreate Club.
 
 ## Requirements
 
-Make sure that Node.js v8.6.0+ is installed (8.11.3+ recommended).
+Make sure that Node.js v8.6.0+ is installed (v8.11.3 recommended).
 
 ## Setup
 

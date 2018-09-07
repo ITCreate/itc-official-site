@@ -4,7 +4,7 @@ The official site of the ITCreate Club.
 
 ## Requirements
 
-Make sure that Node.js v8.6.0+ is installed (v8.11.3 recommended).
+Make sure that Node.js v8.6.0+ is installed (v8.11.4+ recommended).
 
 ## Setup
 
@@ -26,5 +26,5 @@ $ npm run dev # Or yarn dev
 
 ```bash
 # build for production
-$ npm run prod # Or yarn prod
+$ npm run build # Or yarn build
 ```

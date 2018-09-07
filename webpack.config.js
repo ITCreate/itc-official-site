@@ -1,22 +1,11 @@
-const MinifyPlugin = require('babel-minify-webpack-plugin')
+const config = require('./gulp/config')
+
 const WebpackNotifierPlugin = require('webpack-notifier')
-
-const gulpConfig = require('./gulp/config')
-
-const commonPlugins = []
-
-const developmentPlugins = [
-  new WebpackNotifierPlugin({
-    skipFirstNotification: true
-  })
-]
-
-const productionPlugins = [
-  new MinifyPlugin()
-]
+const MinifyPlugin = require('babel-minify-webpack-plugin')
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 
 module.exports = {
-  mode: process.env.NODE_ENV,
+  mode: process.env.NODE_ENV || 'production',
   output: {
     devtoolModuleFilenameTemplate: 'webpack://[namespace]/[resource]?[loaders]'
   },
@@ -26,7 +15,7 @@ module.exports = {
         vendors: {
           minSize: 0,
           test: /[\\/]node_modules[\\/]/,
-          name: `${gulpConfig.paths.root ? `${gulpConfig.paths.root.substring(1)}/` : ''}assets/scripts/vendor`,
+          name: `${config.paths.root.substring(1)}assets/scripts/vendor`,
           chunks: 'all'
         }
       }
@@ -38,7 +27,10 @@ module.exports = {
         test: /\.js$/,
         use: [
           {
-            loader: 'babel-loader?cacheDirectory'
+            loader: 'babel-loader',
+            options: {
+              cacheDirectory: true
+            }
           },
           {
             loader: 'standard-loader'
@@ -55,13 +47,20 @@ module.exports = {
   resolve: {
     modules: [
       'node_modules',
-      `${gulpConfig.paths.src}${gulpConfig.paths.root}/assets/scripts`
+      `${config.paths.src}${config.paths.root}assets/scripts`
     ],
     alias: {
       modernizr$: require('path').resolve(__dirname, '.modernizrrc')
     }
   },
-  devtool: gulpConfig.env.DEVELOPMENT ? 'eval-source-map' : false,
-  plugins: commonPlugins.concat(gulpConfig.env.DEVELOPMENT ? developmentPlugins : [], gulpConfig.env.PRODUCTION ? productionPlugins : []),
-  watch: gulpConfig.watch
+  devtool: config.env.DEVELOPMENT ? 'eval-source-map' : false,
+  plugins: [
+    config.env.DEVELOPMENT && new WebpackNotifierPlugin({
+      skipFirstNotification: true
+    }),
+    config.env.PRODUCTION && new MinifyPlugin(),
+    config.env.PRODUCTION && new LodashModuleReplacementPlugin({
+      'collections': true
+    })
+  ].filter(Boolean)
 }

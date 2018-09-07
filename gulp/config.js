@@ -1,7 +1,7 @@
 const paths = {
   src: 'src',
   dest: 'public',
-  root: ''
+  root: '/' // trailing slash is required
 }
 
 const clean = {
@@ -22,7 +22,7 @@ const html = {
   },
   ejs: {
     data: {
-      members: require(require('path').resolve(`${paths.src}${paths.root}/data/_members.json`))
+      members: require(require('path').resolve(`${paths.src}${paths.root}data/_members.json`))
     },
     options: {
       root: `${paths.src}${paths.root}`
@@ -32,6 +32,7 @@ const html = {
     }
   },
   htmlmin: {
+    caseSensitive: true,
     collapseBooleanAttributes: true,
     collapseWhitespace: true,
     minifyCSS: true,
@@ -42,9 +43,7 @@ const html = {
     removeOptionalTags: true,
     removeRedundantAttributes: true,
     removeScriptTypeAttributes: true,
-    removeStyleLinkTypeAttributes: true,
-    sortAttributes: true,
-    sortClassName: true
+    removeStyleLinkTypeAttributes: true
   },
   filter: {
     pattern: '**/!(_)*.ejs'
@@ -53,7 +52,7 @@ const html = {
 
 const images = {
   src: {
-    globs: `${paths.src}${paths.root}/assets/images/**/*.+(gif|jpg|png|svg)`,
+    globs: `${paths.src}${paths.root}assets/images/**/*.+(gif|jpg|png|svg)`,
     options: {
       base: paths.src
     }
@@ -82,10 +81,13 @@ const images = {
 
 const scripts = {
   src: {
-    globs: `${paths.src}${paths.root}/assets/scripts/**/!(_)*.js`,
+    globs: `${paths.src}${paths.root}assets/scripts/**/!(_)*.js`,
     options: {
       base: paths.src
     }
+  },
+  filter: {
+    pattern: '**/!(_)*.js'
   }
 }
 
@@ -93,25 +95,20 @@ const serve = {
   browserSync: {
     ui: false,
     server: paths.dest,
-    startPath: paths.root
+    startPath: `${paths.root}`
   }
 }
 
 const styles = {
   src: {
-    globs: `${paths.src}${paths.root}/assets/styles/**/*.scss`,
+    globs: `${paths.src}${paths.root}assets/styles/**/*.scss`,
     options: {
       base: paths.src
     }
   },
-  sourcemaps: {
-    init: {
-      loadMaps: true
-    }
-  },
   sass: {
     importer: require('node-sass-magic-importer')(),
-    includePaths: `${paths.src}${paths.root}/assets/styles`,
+    includePaths: `${paths.src}${paths.root}assets/styles`,
     outputStyle: 'compressed'
   },
   cleanCss: {
@@ -145,29 +142,22 @@ const copy = {
   }
 }
 
-const mode = process.env.NODE_ENV || 'production'
-
-const program = require('commander')
-
-program
-  .option('-w, --watch')
-  .parse(process.argv)
-
 const server = require('browser-sync').create()
+
+const env = process.env.NODE_ENV || 'production'
 
 module.exports = {
   paths,
   clean,
-  copy,
   html,
   images,
   scripts,
   serve,
   styles,
+  copy,
+  server,
   env: {
-    DEVELOPMENT: mode === 'development',
-    PRODUCTION: mode === 'production'
-  },
-  watch: program.watch,
-  server
+    DEVELOPMENT: env === 'development',
+    PRODUCTION: env === 'production'
+  }
 }

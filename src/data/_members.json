@@ -1,8 +1,231 @@
 [
-	{
+    {
+        "id": "B8266",
+        "position": "部長",
+        "course": "システムエンジニア専攻",
+        "realname": "中村 徹",
+        "nickname": "",
+        "avatarExt": "jpeg",
+        "interests": [
+            {
+                "term": "サーバーサイド"
+            }
+        ],
+        "links": {
+            "twitter": "https://www.twitter.com/natsuT_T/",
+            "facebook": "https://www.facebook.com/tetsumaybe"
+        }
+    },
+    {
+        "id": "B7080",
+        "position": "副部長",
+        "course": "ネットワークセキュリティ専攻",
+        "realname": "柿元俊也",
+        "nickname": "かっきー",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "web"
+            },
+            {
+                "term": "バイク(KAWASAKIのみ)"
+            },
+            {
+                "term": "猟銃"
+            }
+        ],
+        "links": {
+            "twitter": "https:\/\/twitter.com\/kakimoto_itc",
+            "facebook": "https:\/\/www.facebook.com\/KakimotoShunya",
+            "github": "https:\/\/github.com\/NNN-kakimoto",
+            "qiita": "https:\/\/qiita.com\/NNN-kakimoto\r\n"
+        }
+    },
+    {
+        "id": "B8219",
+        "position": "部員",
+        "course": "ネットワークセキュリティ専攻",
+        "realname": "田中 蒔音",
+        "nickname": "そるてぃ",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "Flutter"
+            },
+            {
+                "term": "歴史"
+            },
+            {
+                "term": "一人旅"
+            }
+        ],
+        "links": {
+            "twitter": "https:\/\/twitter.com\/salty317",
+            "facebook": "https:\/\/www.facebook.com\/salty0317",
+            "github": "https:\/\/github.com\/salty317",
+            "qiita": "https:\/\/qiita.com\/salty317\r\n"
+        }
+    },
+    {
+        "id": "B8241",
+        "position": "部員",
+        "course": "ゲームプログラマー専攻",
+        "realname": "任田 天海",
+        "nickname": "Amami",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "PHP"
+            },
+            {
+                "term": "Web"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/pr_kwz"
+        }
+    },
+    
+    {
+        "id": "B8157",
+        "position": "部員",
+        "course": "情報システム開発学科",
+        "realname": "佐竹洋紀",
+        "nickname": "hiroki",
+        "avatarExt": "jpeg",
+        "interests": [
+            {
+                "term": ".NET"
+            },
+            {
+                "term": "メタプロ"
+            },
+            {
+                "term": "JVM"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/hiroki19990625",
+            "github": "https://github.com/hiroki19990625",
+            "qiita": "https://qiita.com/hiroki19990625"
+        }
+    },
+    {
+        "id": "B8241",
+        "position": "部員",
+        "course": "ゲームプログラマー専攻",
+        "realname": "任田 天海",
+        "nickname": "Amami",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "PHP"
+            },
+            {
+                "term": "Web"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/pr_kwz"
+        }
+    },
+    {
+        "id": "B8358",
+        "position": "部員",
+        "course": "ITスペシャリスト専攻",
+        "realname": "前田 拓海",
+        "nickname": "Kai",
+        "avatarExt": "jpg",
+        "interests": [
+            {
+                "term": "ゲーム"
+            }
+        ],
+        "links": {
+        }
+    },
+    {
+        "id": "B8364",
+        "position": "部員",
+        "course": "ネットワークセキュリティ専攻",
+        "realname": "松井 泰樹",
+        "nickname": "まつい",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "競技プログラミング"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/kenzen_person",
+            "facebook": "https://www.facebook.com/taiki.matui.3"
+        }
+    },
+    {
+        "id": "B7233",
+        "position": "部員",
+        "course": "ネットワークセキュリティ専攻",
+        "realname": "飛田一貴",
+        "nickname": "かずきち",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "ｳｪﾌﾞﾁｮｯﾄﾃﾞｷﾙ"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/h_tyokinuhata",
+            "github": "https:\/\/github.com\/tyokinuhata",
+            "qiita": "https://qiita.com/h_tyokinuhata"
+        }
+    },
+    {
+        "id": "B7180",
+        "position": "部員",
+        "course": "ネットワークセキュリティ専攻",
+        "realname": "高橋秀明",
+        "nickname": "たかし",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "フロントエンド"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/takashimelon",
+            "facebook": "https://www.facebook.com/profile.php?id=100023231493025",
+            "github": "https://github.com/takashi0602",
+            "qiita": "https://qiita.com/takashimelon"
+        }
+    },
+    {
+        "id": "B7306",
+        "position": "部員",
+        "course": "システムエンジニア専攻",
+        "realname": "古谷 颯",
+        "nickname": "",
+        "avatarExt": "png",
+        "interests": [
+            {
+                "term": "ドメイン駆動設計"
+            },
+            {
+                "term": "ゲームプログラミング"
+            },
+            {
+                "term": "言語処理系自作"
+            }
+        ],
+        "links": {
+            "twitter": "https://twitter.com/elipmoc101",
+            "github": "https://github.com/elipmoc",
+            "qiita": "https://qiita.com/elipmoc101"
+        }
+    },
+    {
 		"id": "b6232",
-		"position": "部長",
-		"course": "IT スペシャリスト専攻 3 年",
+		"position": "部員",
+		"course": "IT スペシャリスト専攻",
 		"realname": "伯 健弘",
 		"nickname": "Hack-Man",
 		"avatarExt": "png",
@@ -23,145 +246,8 @@
 			"github": "https://github.com/mogumannto",
 			"qiita":"http://qiita.com/mogumannto"
 		}
-	},
-	{
-		"id": "b7080",
-		"position": "副部長",
-		"course": "ネットワークセキュリティ専攻 2 年",
-		"realname": "柿元 俊也",
-		"nickname": "かっきー",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "Web"
-			},
-			{
-				"term": "自作 PC"
-			},
-			{
-				"term": "バイク"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/kakimotoKAITC",
-			"facebook": "https://facebook.com/KakimotoShunya"
-		}
-	},
-	{
-		"id": "b7233",
-		"position": "部員",
-		"course": "ネットワークセキュリティ専攻 2 年",
-		"realname": "-",
-		"nickname": "かずきち",
-		"avatarExt": "png",
-		"interests": [
-			{
-				"term": "二郎系ラーメン"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/h_tyokinuhata",
-			"github": "https://github.com/tyokinuhata"
-		}
-	},
-	{
-		"id": "b7180",
-		"position": "部員",
-		"course": "ネットワークセキュリティ専攻 2 年",
-		"realname": "-",
-		"nickname": "たかし",
-		"avatarExt": "png",
-		"interests": [
-			{
-				"term": "メロン"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/takashioic",
-			"qiita": "https://qiita.com/takashimelon"
-		}
-	},
-	{
-		"id": "b7090",
-		"position": "部員",
-		"course": "ITスペシャリスト専攻 2 年",
-		"realname": "金子凌雅",
-		"nickname": "-",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "Ruby"
-			},
-			{
-				"term": "Go"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/37x9?s=06",
-			"facebook": "https://facebook.com/ryouga.bakeneko"
-		}
-	},
-	{
-		"id": "b7306",
-		"position": "部員",
-		"course": "システムエンジニア専攻 2 年",
-		"realname": "古谷 颯",
-		"nickname": "-",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "アセンブラ"
-			},
-			{
-				"term": "ゲームプログラミング"
-			},
-			{
-				"term": "自作言語"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/elipmoc101"
-		}
-	},
-	{
-		"id": "b7202",
-		"position": "部員",
-		"course": "システムエンジニア専攻 2 年",
-		"realname": "田中 陸斗",
-		"nickname": "他成理",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "組み込み"
-			},
-			{
-				"term": "Web系"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/mugenryu1101"
-		}
-	},
-	{
-		"id": "b7022",
-		"position": "部員",
-		"course": "ITシステムエンジニアコース 2 年",
-		"realname": "泉谷 賢斗",
-		"nickname": "けんちゃん",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "Java"
-			},
-			{
-				"term": "AI"
-			}
-		],
-		"links": {
-			"twitter": "http://twitter.com/KenAGI_SE"
-		}
-	},
-	{
+    },
+    {
 		"id": "empty",
 		"position": "部員",
 		"course": "IT スペシャリスト専攻 3 年",
@@ -175,133 +261,6 @@
 		"links": {
 			"twitter": "https://twitter.com/tttyya",
 			"facebook": "https://www.facebook.com/profile.php?id=100014174263512&fref=hovercard&hc_location=chat"
-		}
-	},
-	{
-		"id": "b6123",
-		"position": "部員",
-		"course": "ゲームデザイナー専攻 3 年",
-		"realname": "嶋田 一輝",
-		"nickname": "嶋ちゃん",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "3ds Max"
-			},
-			{
-				"term": "ZBrush"
-			},
-			{
-				"term": "Unreal Engine 4"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/oekaki_pin"
-		}
-	},
-	{
-		"id": "b6099",
-		"position": "部員",
-		"course": "ネットワークセキュリティ専攻 3 年",
-		"realname": "甲村 迅",
-		"nickname": "Gene",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "コンピュータネットワーク"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/Jadiunr",
-			"facebook": "https://www.facebook.com/Jadiunr",
-			"github": "https://github.com/Jadiunr"
-		}
-	},
-	{
-		"id": "b6224",
-		"position": "部員",
-		"course": "ネットワークセキュリティ専攻 3 年",
-		"realname": "根来 玲冶",
-		"nickname": "れいや",
-		"avatarExt": "png",
-		"interests": [
-			{
-				"term": "Laravel"
-			},
-			{
-				"term": "Vue.js"
-			},
-			{
-				"term": "Electron"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/RecallRreiya?lang=ja"
-		}
-	},
-	{
-		"id": "b6352",
-		"position": "部員",
-		"course": "ネットワークセキュリティ専攻 3 年",
-		"realname": "吉岡 想有太",
-		"nickname": "そーた",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "Laravel"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/Souta_RRRRROW"
-		}
-	},
-	{
-		"id": "b5096",
-		"position": "部員",
-		"course": "ゲームプログラマー専攻 4 年",
-		"realname": "伊藤 拓",
-		"nickname": "itohii (イトヒー)",
-		"avatarExt": "jpg",
-		"interests": [
-			{
-				"term": "Web プログラミング"
-			},
-			{
-				"term": "C++"
-			},
-			{
-				"term": "マネジメント"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/itohii0626",
-			"facebook": "https://www.facebook.com/profile.php?id=100014331545687&fref=nf",
-			"github": "https://github.com/itohii"
-		}
-	},
-	{
-		"id": "b5159",
-		"position": "部員",
-		"course": "ネットワークセキュリティ専攻 4 年",
-		"realname": "青木 勇介",
-		"nickname": "UNILORN",
-		"avatarExt": "png",
-		"interests": [
-			{
-				"term": "PHP"
-			},
-			{
-				"term": "Python"
-			},
-			{
-				"term": "Raspberry PI"
-			}
-		],
-		"links": {
-			"twitter": "https://twitter.com/yuuiro_1552",
-			"facebook": "https://www.facebook.com/UNILORN",
-			"github": "https://github.com/UNILORN/",
-			"qiita": "http://qiita.com/UNILORN"
 		}
 	}
 ]

@@ -1,63 +1,82 @@
 [
     {
-        "id": "B8219",
-        "position": "部員",
-        "course": "ネットワークセキュリティ専攻",
-        "realname": "田中 蒔音",
-        "nickname": "そるてぃ",
+        "id": "c0256",
+        "position": "部長",
+        "course": "ネットワークセキュリティ専攻 3 年",
+        "realname": "長道　いくみ",
+        "nickname": "いも氏",
         "avatarExt": "png",
         "interests": [
             {
-                "term": "Flutter"
+                "term": "読書"
             },
             {
-                "term": "歴史"
+                "term": "ゲーム"
             },
             {
-                "term": "一人旅"
+                "term": "散歩"
             }
         ],
-        "links": {
-            "twitter": "https:\/\/twitter.com\/salty317",
-            "facebook": "https:\/\/www.facebook.com\/salty0317",
-            "github": "https:\/\/github.com\/salty317",
-            "qiita": "https:\/\/qiita.com\/salty317\r\n"
-        }
+        "links": {}
     },
     {
-        "id": "B8241",
-        "position": "部員",
-        "course": "ゲームプログラマー専攻",
-        "realname": "任田 天海",
-        "nickname": "Amami",
+        "id": "c1084",
+        "position": "副部長",
+        "course": "ネットワークセキュリティ専攻 2 年",
+        "realname": "甲斐　向葵",
+        "nickname": "甲斐さん",
         "avatarExt": "png",
         "interests": [
             {
-                "term": "PHP"
+                "term": "あほげほげ"
             },
             {
-                "term": "Web"
+                "term": "ほげほげ"
+            },
+            {
+                "term": "ほげ"
             }
         ],
-        "links": {
-            "twitter": "https://twitter.com/pr_kwz"
-        }
+        "links": {}
     },
     {
-        "id": "B8364",
-        "position": "部員",
-        "course": "ネットワークセキュリティ専攻",
-        "realname": "松井 泰樹",
-        "nickname": "まつい",
-        "avatarExt": "png",
+        "id": "b9361",
+        "position": "前部長",
+        "course": "CG映像クリエイター専攻 4 年",
+        "realname": "堀内 黎司",
+        "nickname": "遅刻魔",
+        "avatarExt": "jpg",
         "interests": [
             {
-                "term": "競技プログラミング"
+                "term": "3DCG"
+            },
+            {
+                "term": "DTM"
+            },
+            {
+                "term": "アルコール"
             }
+        ]
+        },
+    {
+        "id": "c1348",
+        "position": "部員",
+        "course": "ゲームプログラマー専攻 2 年",
+        "realname": "松尾 建吾",
+        "nickname": "健吾",
+        "avatarExt": "jpg",
+        "interests": [
+            {
+                "term": "仮面ライダー"
+            },
+            {
+                "term": "MCU"
+            },
+            {
+                "term": "ゲーム"
+            } 
+
         ],
-        "links": {
-            "twitter": "https://twitter.com/kenzen_person",
-            "facebook": "https://www.facebook.com/taiki.matui.3"
-        }
+        "links": {}
     }
 ]

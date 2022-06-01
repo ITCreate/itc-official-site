@@ -25,16 +25,16 @@
         "course": "ネットワークセキュリティ専攻 2 年",
         "realname": "甲斐 向葵",
         "nickname": "甲斐さん",
-        "avatarExt": "png",
+        "avatarExt": "jpg",
         "interests": [
             {
-                "term": "あほげほげ"
+                "term": "にじさんじ"
             },
             {
-                "term": "ほげほげ"
+                "term": "ゲーム"
             },
             {
-                "term": "ほげ"
+                "term": "ctf"
             }
         ],
         "links": {}

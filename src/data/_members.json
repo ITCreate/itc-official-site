@@ -54,7 +54,11 @@
                 "term": "DTM"
             },
             {
+<<<<<<< Updated upstream
                 "term": "アルコール"
+=======
+                "term": "~鉄道~"
+>>>>>>> Stashed changes
             }
         ]
         },

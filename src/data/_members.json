@@ -1,7 +1,7 @@
 [
     {
         "id": "c0256",
-        "position": "部長",
+        "position": "前部長",
         "course": "ネットワークセキュリティ専攻 3 年",
         "realname": "長道 いくみ",
         "nickname": "いも氏",
@@ -41,7 +41,7 @@
     },
     {
         "id": "b9361",
-        "position": "前部長",
+        "position": "2代前部長",
         "course": "CG映像クリエイター専攻 4 年",
         "realname": "堀内 黎司",
         "nickname": "遅刻魔",
@@ -60,7 +60,7 @@
         },
     {
         "id": "c1348",
-        "position": "部員",
+        "position": "平部員",
         "course": "ゲームプログラマー専攻 2 年",
         "realname": "松尾 建吾",
         "nickname": "健吾",

@@ -78,5 +78,26 @@
 
         ],
         "links": {}
+    },
+      {
+        "id": "c2375",
+        "position": "平部員",
+        "course": "ネットワークセキュリティ専攻 2 年",
+        "realname": "吉田 柊",
+        "nickname": "しゅう",
+        "avatarExt": "jpg",
+        "interests": [
+            {
+                "term": "あ"
+            },
+            {
+                "term": "い"
+            },
+            {
+                "term": "う"
+            } 
+
+        ],
+        "links": {}
     }
 ]

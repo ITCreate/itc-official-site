@@ -4,8 +4,8 @@
         "position": "部長",
         "course": "ITスペシャリスト専攻2年",
         "realname": "中村 友梨香",
-        "nickname": "部長",
-        "avatarExt": "png",
+        "$nickname": "部長",
+        "$avatarExt": "png",
         "interests": [
             {
                 "term": "ライブ鑑賞"
@@ -16,10 +16,10 @@
     {
         "id": "c2234",
         "position": "副部長",
-        "course": "ネットワークセキュリティ専攻2年",
+        "course": "ネットワークセキュリティ専攻3年",
         "realname": "甲斐 向葵",
-        "nickname": "副部長",
-        "avatarExt": "jpg",
+        "$nickname": "副部長",
+        "$avatarExt": "jpg",
         "interests": [
             {
                 "term": "ゲーム"
@@ -36,8 +36,8 @@
         "position": "前部長",
         "course": "ネットワークセキュリティ専攻4年",
         "realname": "長道 いくみ",
-        "nickname": "前部長",
-        "avatarExt": "jpg",
+        "$nickname": "前部長",
+        "$avatarExt": "jpg",
         "interests": [
             {
                 "term": "散歩"
@@ -50,8 +50,8 @@
         "position": "部員",
         "course": "ネットワークセキュリティ専攻2年",
         "realname": "吉田 柊",
-        "nickname": "部員",
-        "avatarExt": "jpg",
+        "$nickname": "部員",
+        "$avatarExt": "jpg",
         "interests": [
             {
                 "term": "Web制作"
